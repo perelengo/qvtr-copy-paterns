@@ -1,0 +1,5265 @@
+transformation copyCopyuml241 ( source:uml241,target:uml241 ) {
+	relation MarkValueSpecificationAction {
+		checkonly domain source source_ValueSpecificationAction:uml241::ValueSpecificationAction{	};
+		enforce domain target target_ValueSpecificationAction:uml241::ValueSpecificationAction{	};
+		where{
+			MarkAction(
+			source_ValueSpecificationAction,
+			target_ValueSpecificationAction);
+		}
+	}
+	relation MarkValuePin {
+		checkonly domain source source_ValuePin:uml241::ValuePin{	};
+		enforce domain target target_ValuePin:uml241::ValuePin{	};
+		where{
+			MarkInputPin(
+			source_ValuePin,
+			target_ValuePin);
+		}
+	}
+	relation MarkUnmarshallAction {
+		checkonly domain source source_UnmarshallAction:uml241::UnmarshallAction{	};
+		enforce domain target target_UnmarshallAction:uml241::UnmarshallAction{	};
+		where{
+			MarkAction(
+			source_UnmarshallAction,
+			target_UnmarshallAction);
+		}
+	}
+	relation MarkTimeObservation {
+		checkonly domain source source_TimeObservation:uml241::TimeObservation{	};
+		enforce domain target target_TimeObservation:uml241::TimeObservation{	};
+		where{
+			MarkObservation(
+			source_TimeObservation,
+			target_TimeObservation);
+		}
+	}
+	relation MarkTimeEvent {
+		checkonly domain source source_TimeEvent:uml241::TimeEvent{	};
+		enforce domain target target_TimeEvent:uml241::TimeEvent{	};
+		where{
+			MarkEvent(
+			source_TimeEvent,
+			target_TimeEvent);
+		}
+	}
+	relation MarkTimeExpression {
+		checkonly domain source source_TimeExpression:uml241::TimeExpression{	};
+		enforce domain target target_TimeExpression:uml241::TimeExpression{	};
+		where{
+			MarkValueSpecification(
+			source_TimeExpression,
+			target_TimeExpression);
+		}
+	}
+	relation MarkTimeInterval {
+		checkonly domain source source_TimeInterval:uml241::TimeInterval{	};
+		enforce domain target target_TimeInterval:uml241::TimeInterval{	};
+		where{
+			MarkInterval(
+			source_TimeInterval,
+			target_TimeInterval);
+		}
+	}
+	relation MarkTimeConstraint {
+		checkonly domain source source_TimeConstraint:uml241::TimeConstraint{	};
+		enforce domain target target_TimeConstraint:uml241::TimeConstraint{	};
+		where{
+			MarkIntervalConstraint(
+			source_TimeConstraint,
+			target_TimeConstraint);
+		}
+	}
+	relation MarkTestIdentityAction {
+		checkonly domain source source_TestIdentityAction:uml241::TestIdentityAction{	};
+		enforce domain target target_TestIdentityAction:uml241::TestIdentityAction{	};
+		where{
+			MarkAction(
+			source_TestIdentityAction,
+			target_TestIdentityAction);
+		}
+	}
+	relation MarkStateInvariant {
+		checkonly domain source source_StateInvariant:uml241::StateInvariant{	};
+		enforce domain target target_StateInvariant:uml241::StateInvariant{	};
+		where{
+			MarkInteractionFragment(
+			source_StateInvariant,
+			target_StateInvariant);
+		}
+	}
+	relation MarkStartObjectBehaviorAction {
+		checkonly domain source source_StartObjectBehaviorAction:uml241::StartObjectBehaviorAction{	};
+		enforce domain target target_StartObjectBehaviorAction:uml241::StartObjectBehaviorAction{	};
+		where{
+			MarkCallAction(
+			source_StartObjectBehaviorAction,
+			target_StartObjectBehaviorAction);
+		}
+	}
+	relation MarkStartClassifierBehaviorAction {
+		checkonly domain source source_StartClassifierBehaviorAction:uml241::StartClassifierBehaviorAction{	};
+		enforce domain target target_StartClassifierBehaviorAction:uml241::StartClassifierBehaviorAction{	};
+		where{
+			MarkAction(
+			source_StartClassifierBehaviorAction,
+			target_StartClassifierBehaviorAction);
+		}
+	}
+	relation MarkSignalEvent {
+		checkonly domain source source_SignalEvent:uml241::SignalEvent{	};
+		enforce domain target target_SignalEvent:uml241::SignalEvent{	};
+		where{
+			MarkMessageEvent(
+			source_SignalEvent,
+			target_SignalEvent);
+		}
+	}
+	relation MarkSequenceNode {
+		checkonly domain source source_SequenceNode:uml241::SequenceNode{	};
+		enforce domain target target_SequenceNode:uml241::SequenceNode{	};
+		where{
+			MarkStructuredActivityNode(
+			source_SequenceNode,
+			target_SequenceNode);
+		}
+	}
+	relation MarkSendSignalAction {
+		checkonly domain source source_SendSignalAction:uml241::SendSignalAction{	};
+		enforce domain target target_SendSignalAction:uml241::SendSignalAction{	};
+		where{
+			MarkInvocationAction(
+			source_SendSignalAction,
+			target_SendSignalAction);
+		}
+	}
+	relation MarkSendObjectAction {
+		checkonly domain source source_SendObjectAction:uml241::SendObjectAction{	};
+		enforce domain target target_SendObjectAction:uml241::SendObjectAction{	};
+		where{
+			MarkInvocationAction(
+			source_SendObjectAction,
+			target_SendObjectAction);
+		}
+	}
+	relation MarkReplyAction {
+		checkonly domain source source_ReplyAction:uml241::ReplyAction{	};
+		enforce domain target target_ReplyAction:uml241::ReplyAction{	};
+		where{
+			MarkAction(
+			source_ReplyAction,
+			target_ReplyAction);
+		}
+	}
+	relation MarkRemoveVariableValueAction {
+		checkonly domain source source_RemoveVariableValueAction:uml241::RemoveVariableValueAction{	};
+		enforce domain target target_RemoveVariableValueAction:uml241::RemoveVariableValueAction{	};
+		where{
+			MarkWriteVariableAction(
+			source_RemoveVariableValueAction,
+			target_RemoveVariableValueAction);
+		}
+	}
+	relation MarkRemoveStructuralFeatureValueAction {
+		checkonly domain source source_RemoveStructuralFeatureValueAction:uml241::RemoveStructuralFeatureValueAction{	};
+		enforce domain target target_RemoveStructuralFeatureValueAction:uml241::RemoveStructuralFeatureValueAction{	};
+		where{
+			MarkWriteStructuralFeatureAction(
+			source_RemoveStructuralFeatureValueAction,
+			target_RemoveStructuralFeatureValueAction);
+		}
+	}
+	relation MarkReduceAction {
+		checkonly domain source source_ReduceAction:uml241::ReduceAction{	};
+		enforce domain target target_ReduceAction:uml241::ReduceAction{	};
+		where{
+			MarkAction(
+			source_ReduceAction,
+			target_ReduceAction);
+		}
+	}
+	relation MarkReclassifyObjectAction {
+		checkonly domain source source_ReclassifyObjectAction:uml241::ReclassifyObjectAction{	};
+		enforce domain target target_ReclassifyObjectAction:uml241::ReclassifyObjectAction{	};
+		where{
+			MarkAction(
+			source_ReclassifyObjectAction,
+			target_ReclassifyObjectAction);
+		}
+	}
+	relation MarkReadVariableAction {
+		checkonly domain source source_ReadVariableAction:uml241::ReadVariableAction{	};
+		enforce domain target target_ReadVariableAction:uml241::ReadVariableAction{	};
+		where{
+			MarkVariableAction(
+			source_ReadVariableAction,
+			target_ReadVariableAction);
+		}
+	}
+	relation MarkReadStructuralFeatureAction {
+		checkonly domain source source_ReadStructuralFeatureAction:uml241::ReadStructuralFeatureAction{	};
+		enforce domain target target_ReadStructuralFeatureAction:uml241::ReadStructuralFeatureAction{	};
+		where{
+			MarkStructuralFeatureAction(
+			source_ReadStructuralFeatureAction,
+			target_ReadStructuralFeatureAction);
+		}
+	}
+	relation MarkReadSelfAction {
+		checkonly domain source source_ReadSelfAction:uml241::ReadSelfAction{	};
+		enforce domain target target_ReadSelfAction:uml241::ReadSelfAction{	};
+		where{
+			MarkAction(
+			source_ReadSelfAction,
+			target_ReadSelfAction);
+		}
+	}
+	relation MarkReadLinkObjectEndQualifierAction {
+		checkonly domain source source_ReadLinkObjectEndQualifierAction:uml241::ReadLinkObjectEndQualifierAction{	};
+		enforce domain target target_ReadLinkObjectEndQualifierAction:uml241::ReadLinkObjectEndQualifierAction{	};
+		where{
+			MarkAction(
+			source_ReadLinkObjectEndQualifierAction,
+			target_ReadLinkObjectEndQualifierAction);
+		}
+	}
+	relation MarkReadLinkObjectEndAction {
+		checkonly domain source source_ReadLinkObjectEndAction:uml241::ReadLinkObjectEndAction{	};
+		enforce domain target target_ReadLinkObjectEndAction:uml241::ReadLinkObjectEndAction{	};
+		where{
+			MarkAction(
+			source_ReadLinkObjectEndAction,
+			target_ReadLinkObjectEndAction);
+		}
+	}
+	relation MarkReadLinkAction {
+		checkonly domain source source_ReadLinkAction:uml241::ReadLinkAction{	};
+		enforce domain target target_ReadLinkAction:uml241::ReadLinkAction{	};
+		where{
+			MarkLinkAction(
+			source_ReadLinkAction,
+			target_ReadLinkAction);
+		}
+	}
+	relation MarkReadIsClassifiedObjectAction {
+		checkonly domain source source_ReadIsClassifiedObjectAction:uml241::ReadIsClassifiedObjectAction{	};
+		enforce domain target target_ReadIsClassifiedObjectAction:uml241::ReadIsClassifiedObjectAction{	};
+		where{
+			MarkAction(
+			source_ReadIsClassifiedObjectAction,
+			target_ReadIsClassifiedObjectAction);
+		}
+	}
+	relation MarkReadExtentAction {
+		checkonly domain source source_ReadExtentAction:uml241::ReadExtentAction{	};
+		enforce domain target target_ReadExtentAction:uml241::ReadExtentAction{	};
+		where{
+			MarkAction(
+			source_ReadExtentAction,
+			target_ReadExtentAction);
+		}
+	}
+	relation MarkRaiseExceptionAction {
+		checkonly domain source source_RaiseExceptionAction:uml241::RaiseExceptionAction{	};
+		enforce domain target target_RaiseExceptionAction:uml241::RaiseExceptionAction{	};
+		where{
+			MarkAction(
+			source_RaiseExceptionAction,
+			target_RaiseExceptionAction);
+		}
+	}
+	relation MarkProtocolTransition {
+		checkonly domain source source_ProtocolTransition:uml241::ProtocolTransition{	};
+		enforce domain target target_ProtocolTransition:uml241::ProtocolTransition{	};
+		where{
+			MarkTransition(
+			source_ProtocolTransition,
+			target_ProtocolTransition);
+		}
+	}
+	relation MarkOpaqueAction {
+		checkonly domain source source_OpaqueAction:uml241::OpaqueAction{	};
+		enforce domain target target_OpaqueAction:uml241::OpaqueAction{	};
+		where{
+			MarkAction(
+			source_OpaqueAction,
+			target_OpaqueAction);
+		}
+	}
+	relation MarkMergeNode {
+		checkonly domain source source_MergeNode:uml241::MergeNode{	};
+		enforce domain target target_MergeNode:uml241::MergeNode{	};
+		where{
+			MarkControlNode(
+			source_MergeNode,
+			target_MergeNode);
+		}
+	}
+	relation MarkLoopNode {
+		checkonly domain source source_LoopNode:uml241::LoopNode{	};
+		enforce domain target target_LoopNode:uml241::LoopNode{	};
+		where{
+			MarkStructuredActivityNode(
+			source_LoopNode,
+			target_LoopNode);
+		}
+	}
+	relation MarkLiteralUnlimitedNatural {
+		checkonly domain source source_LiteralUnlimitedNatural:uml241::LiteralUnlimitedNatural{	};
+		enforce domain target target_LiteralUnlimitedNatural:uml241::LiteralUnlimitedNatural{	};
+		where{
+			MarkLiteralSpecification(
+			source_LiteralUnlimitedNatural,
+			target_LiteralUnlimitedNatural);
+		}
+	}
+	relation MarkLiteralString {
+		checkonly domain source source_LiteralString:uml241::LiteralString{	};
+		enforce domain target target_LiteralString:uml241::LiteralString{	};
+		where{
+			MarkLiteralSpecification(
+			source_LiteralString,
+			target_LiteralString);
+		}
+	}
+	relation MarkLiteralReal {
+		checkonly domain source source_LiteralReal:uml241::LiteralReal{	};
+		enforce domain target target_LiteralReal:uml241::LiteralReal{	};
+		where{
+			MarkLiteralSpecification(
+			source_LiteralReal,
+			target_LiteralReal);
+		}
+	}
+	relation MarkLiteralNull {
+		checkonly domain source source_LiteralNull:uml241::LiteralNull{	};
+		enforce domain target target_LiteralNull:uml241::LiteralNull{	};
+		where{
+			MarkLiteralSpecification(
+			source_LiteralNull,
+			target_LiteralNull);
+		}
+	}
+	relation MarkLiteralInteger {
+		checkonly domain source source_LiteralInteger:uml241::LiteralInteger{	};
+		enforce domain target target_LiteralInteger:uml241::LiteralInteger{	};
+		where{
+			MarkLiteralSpecification(
+			source_LiteralInteger,
+			target_LiteralInteger);
+		}
+	}
+	relation MarkLiteralSpecification {
+		checkonly domain source source_LiteralSpecification:uml241::LiteralSpecification{	};
+		enforce domain target target_LiteralSpecification:uml241::LiteralSpecification{	};
+		where{
+			MarkValueSpecification(
+			source_LiteralSpecification,
+			target_LiteralSpecification);
+		}
+	}
+	relation MarkLiteralBoolean {
+		checkonly domain source source_LiteralBoolean:uml241::LiteralBoolean{	};
+		enforce domain target target_LiteralBoolean:uml241::LiteralBoolean{	};
+		where{
+			MarkLiteralSpecification(
+			source_LiteralBoolean,
+			target_LiteralBoolean);
+		}
+	}
+	relation MarkJoinNode {
+		checkonly domain source source_JoinNode:uml241::JoinNode{	};
+		enforce domain target target_JoinNode:uml241::JoinNode{	};
+		where{
+			MarkControlNode(
+			source_JoinNode,
+			target_JoinNode);
+		}
+	}
+	relation MarkInstanceValue {
+		checkonly domain source source_InstanceValue:uml241::InstanceValue{	};
+		enforce domain target target_InstanceValue:uml241::InstanceValue{	};
+		where{
+			MarkValueSpecification(
+			source_InstanceValue,
+			target_InstanceValue);
+		}
+	}
+	relation MarkInitialNode {
+		checkonly domain source source_InitialNode:uml241::InitialNode{	};
+		enforce domain target target_InitialNode:uml241::InitialNode{	};
+		where{
+			MarkControlNode(
+			source_InitialNode,
+			target_InitialNode);
+		}
+	}
+	relation MarkInformationItem {
+		checkonly domain source source_InformationItem:uml241::InformationItem{	};
+		enforce domain target target_InformationItem:uml241::InformationItem{	};
+		where{
+			MarkClassifier(
+			source_InformationItem,
+			target_InformationItem);
+		}
+	}
+	relation MarkInformationFlow {
+		checkonly domain source source_InformationFlow:uml241::InformationFlow{	};
+		enforce domain target target_InformationFlow:uml241::InformationFlow{	};
+		where{
+			MarkPackageableElement(
+			source_InformationFlow,
+			target_InformationFlow);
+
+			MarkDirectedRelationship(
+			source_InformationFlow,
+			target_InformationFlow);
+		}
+	}
+	relation MarkOpaqueBehavior {
+		checkonly domain source source_OpaqueBehavior:uml241::OpaqueBehavior{	};
+		enforce domain target target_OpaqueBehavior:uml241::OpaqueBehavior{	};
+		where{
+			MarkBehavior(
+			source_OpaqueBehavior,
+			target_OpaqueBehavior);
+		}
+	}
+	relation MarkFunctionBehavior {
+		checkonly domain source source_FunctionBehavior:uml241::FunctionBehavior{	};
+		enforce domain target target_FunctionBehavior:uml241::FunctionBehavior{	};
+		where{
+			MarkOpaqueBehavior(
+			source_FunctionBehavior,
+			target_FunctionBehavior);
+		}
+	}
+	relation MarkForkNode {
+		checkonly domain source source_ForkNode:uml241::ForkNode{	};
+		enforce domain target target_ForkNode:uml241::ForkNode{	};
+		where{
+			MarkControlNode(
+			source_ForkNode,
+			target_ForkNode);
+		}
+	}
+	relation MarkFlowFinalNode {
+		checkonly domain source source_FlowFinalNode:uml241::FlowFinalNode{	};
+		enforce domain target target_FlowFinalNode:uml241::FlowFinalNode{	};
+		where{
+			MarkFinalNode(
+			source_FlowFinalNode,
+			target_FlowFinalNode);
+		}
+	}
+	relation MarkFinalState {
+		checkonly domain source source_FinalState:uml241::FinalState{	};
+		enforce domain target target_FinalState:uml241::FinalState{	};
+		where{
+			MarkState(
+			source_FinalState,
+			target_FinalState);
+		}
+	}
+	relation MarkExpansionRegion {
+		checkonly domain source source_ExpansionRegion:uml241::ExpansionRegion{	};
+		enforce domain target target_ExpansionRegion:uml241::ExpansionRegion{	};
+		where{
+			MarkStructuredActivityNode(
+			source_ExpansionRegion,
+			target_ExpansionRegion);
+		}
+	}
+	relation MarkExpansionNode {
+		checkonly domain source source_ExpansionNode:uml241::ExpansionNode{	};
+		enforce domain target target_ExpansionNode:uml241::ExpansionNode{	};
+		where{
+			MarkObjectNode(
+			source_ExpansionNode,
+			target_ExpansionNode);
+		}
+	}
+	relation MarkExecutionOccurrenceSpecification {
+		checkonly domain source source_ExecutionOccurrenceSpecification:uml241::ExecutionOccurrenceSpecification{	};
+		enforce domain target target_ExecutionOccurrenceSpecification:uml241::ExecutionOccurrenceSpecification{	};
+		where{
+			MarkOccurrenceSpecification(
+			source_ExecutionOccurrenceSpecification,
+			target_ExecutionOccurrenceSpecification);
+		}
+	}
+	relation MarkExecutionEnvironment {
+		checkonly domain source source_ExecutionEnvironment:uml241::ExecutionEnvironment{	};
+		enforce domain target target_ExecutionEnvironment:uml241::ExecutionEnvironment{	};
+		where{
+			MarkNode(
+			source_ExecutionEnvironment,
+			target_ExecutionEnvironment);
+		}
+	}
+	relation MarkDurationObservation {
+		checkonly domain source source_DurationObservation:uml241::DurationObservation{	};
+		enforce domain target target_DurationObservation:uml241::DurationObservation{	};
+		where{
+			MarkObservation(
+			source_DurationObservation,
+			target_DurationObservation);
+		}
+	}
+	relation MarkDurationInterval {
+		checkonly domain source source_DurationInterval:uml241::DurationInterval{	};
+		enforce domain target target_DurationInterval:uml241::DurationInterval{	};
+		where{
+			MarkInterval(
+			source_DurationInterval,
+			target_DurationInterval);
+		}
+	}
+	relation MarkInterval {
+		checkonly domain source source_Interval:uml241::Interval{	};
+		enforce domain target target_Interval:uml241::Interval{	};
+		where{
+			MarkValueSpecification(
+			source_Interval,
+			target_Interval);
+		}
+	}
+	relation MarkIntervalConstraint {
+		checkonly domain source source_IntervalConstraint:uml241::IntervalConstraint{	};
+		enforce domain target target_IntervalConstraint:uml241::IntervalConstraint{	};
+		where{
+			MarkConstraint(
+			source_IntervalConstraint,
+			target_IntervalConstraint);
+		}
+	}
+	relation MarkDurationConstraint {
+		checkonly domain source source_DurationConstraint:uml241::DurationConstraint{	};
+		enforce domain target target_DurationConstraint:uml241::DurationConstraint{	};
+		where{
+			MarkIntervalConstraint(
+			source_DurationConstraint,
+			target_DurationConstraint);
+		}
+	}
+	relation MarkObservation {
+		checkonly domain source source_Observation:uml241::Observation{	};
+		enforce domain target target_Observation:uml241::Observation{	};
+		where{
+			MarkPackageableElement(
+			source_Observation,
+			target_Observation);
+		}
+	}
+	relation MarkDuration {
+		checkonly domain source source_Duration:uml241::Duration{	};
+		enforce domain target target_Duration:uml241::Duration{	};
+		where{
+			MarkValueSpecification(
+			source_Duration,
+			target_Duration);
+		}
+	}
+	relation MarkNode {
+		checkonly domain source source_Node:uml241::Node{	};
+		enforce domain target target_Node:uml241::Node{	};
+		where{
+			MarkClass(
+			source_Node,
+			target_Node);
+
+			MarkDeploymentTarget(
+			source_Node,
+			target_Node);
+		}
+	}
+	relation MarkDevice {
+		checkonly domain source source_Device:uml241::Device{	};
+		enforce domain target target_Device:uml241::Device{	};
+		where{
+			MarkNode(
+			source_Device,
+			target_Device);
+		}
+	}
+	relation MarkMessageOccurrenceSpecification {
+		checkonly domain source source_MessageOccurrenceSpecification:uml241::MessageOccurrenceSpecification{	};
+		enforce domain target target_MessageOccurrenceSpecification:uml241::MessageOccurrenceSpecification{	};
+		where{
+			MarkOccurrenceSpecification(
+			source_MessageOccurrenceSpecification,
+			target_MessageOccurrenceSpecification);
+
+			MarkMessageEnd(
+			source_MessageOccurrenceSpecification,
+			target_MessageOccurrenceSpecification);
+		}
+	}
+	relation MarkDestructionOccurrenceSpecification {
+		checkonly domain source source_DestructionOccurrenceSpecification:uml241::DestructionOccurrenceSpecification{	};
+		enforce domain target target_DestructionOccurrenceSpecification:uml241::DestructionOccurrenceSpecification{	};
+		where{
+			MarkMessageOccurrenceSpecification(
+			source_DestructionOccurrenceSpecification,
+			target_DestructionOccurrenceSpecification);
+		}
+	}
+	relation MarkDestroyObjectAction {
+		checkonly domain source source_DestroyObjectAction:uml241::DestroyObjectAction{	};
+		enforce domain target target_DestroyObjectAction:uml241::DestroyObjectAction{	};
+		where{
+			MarkAction(
+			source_DestroyObjectAction,
+			target_DestroyObjectAction);
+		}
+	}
+	relation MarkLinkEndDestructionData {
+		checkonly domain source source_LinkEndDestructionData:uml241::LinkEndDestructionData{	};
+		enforce domain target target_LinkEndDestructionData:uml241::LinkEndDestructionData{	};
+		where{
+			MarkLinkEndData(
+			source_LinkEndDestructionData,
+			target_LinkEndDestructionData);
+		}
+	}
+	relation MarkDestroyLinkAction {
+		checkonly domain source source_DestroyLinkAction:uml241::DestroyLinkAction{	};
+		enforce domain target target_DestroyLinkAction:uml241::DestroyLinkAction{	};
+		where{
+			MarkWriteLinkAction(
+			source_DestroyLinkAction,
+			target_DestroyLinkAction);
+		}
+	}
+	relation MarkObjectFlow {
+		checkonly domain source source_ObjectFlow:uml241::ObjectFlow{	};
+		enforce domain target target_ObjectFlow:uml241::ObjectFlow{	};
+		where{
+			MarkActivityEdge(
+			source_ObjectFlow,
+			target_ObjectFlow);
+		}
+	}
+	relation MarkDecisionNode {
+		checkonly domain source source_DecisionNode:uml241::DecisionNode{	};
+		enforce domain target target_DecisionNode:uml241::DecisionNode{	};
+		where{
+			MarkControlNode(
+			source_DecisionNode,
+			target_DecisionNode);
+		}
+	}
+	relation MarkDataStoreNode {
+		checkonly domain source source_DataStoreNode:uml241::DataStoreNode{	};
+		enforce domain target target_DataStoreNode:uml241::DataStoreNode{	};
+		where{
+			MarkCentralBufferNode(
+			source_DataStoreNode,
+			target_DataStoreNode);
+		}
+	}
+	relation MarkCreateObjectAction {
+		checkonly domain source source_CreateObjectAction:uml241::CreateObjectAction{	};
+		enforce domain target target_CreateObjectAction:uml241::CreateObjectAction{	};
+		where{
+			MarkAction(
+			source_CreateObjectAction,
+			target_CreateObjectAction);
+		}
+	}
+	relation MarkCreateLinkObjectAction {
+		checkonly domain source source_CreateLinkObjectAction:uml241::CreateLinkObjectAction{	};
+		enforce domain target target_CreateLinkObjectAction:uml241::CreateLinkObjectAction{	};
+		where{
+			MarkCreateLinkAction(
+			source_CreateLinkObjectAction,
+			target_CreateLinkObjectAction);
+		}
+	}
+	relation MarkLinkEndCreationData {
+		checkonly domain source source_LinkEndCreationData:uml241::LinkEndCreationData{	};
+		enforce domain target target_LinkEndCreationData:uml241::LinkEndCreationData{	};
+		where{
+			MarkLinkEndData(
+			source_LinkEndCreationData,
+			target_LinkEndCreationData);
+		}
+	}
+	relation MarkQualifierValue {
+		checkonly domain source source_QualifierValue:uml241::QualifierValue{	};
+		enforce domain target target_QualifierValue:uml241::QualifierValue{	};
+		where{
+			MarkElement(
+			source_QualifierValue,
+			target_QualifierValue);
+		}
+	}
+	relation MarkLinkEndData {
+		checkonly domain source source_LinkEndData:uml241::LinkEndData{	};
+		enforce domain target target_LinkEndData:uml241::LinkEndData{	};
+		where{
+			MarkElement(
+			source_LinkEndData,
+			target_LinkEndData);
+		}
+	}
+	relation MarkLinkAction {
+		checkonly domain source source_LinkAction:uml241::LinkAction{	};
+		enforce domain target target_LinkAction:uml241::LinkAction{	};
+		where{
+			MarkAction(
+			source_LinkAction,
+			target_LinkAction);
+		}
+	}
+	relation MarkWriteLinkAction {
+		checkonly domain source source_WriteLinkAction:uml241::WriteLinkAction{	};
+		enforce domain target target_WriteLinkAction:uml241::WriteLinkAction{	};
+		where{
+			MarkLinkAction(
+			source_WriteLinkAction,
+			target_WriteLinkAction);
+		}
+	}
+	relation MarkCreateLinkAction {
+		checkonly domain source source_CreateLinkAction:uml241::CreateLinkAction{	};
+		enforce domain target target_CreateLinkAction:uml241::CreateLinkAction{	};
+		where{
+			MarkWriteLinkAction(
+			source_CreateLinkAction,
+			target_CreateLinkAction);
+		}
+	}
+	relation MarkControlFlow {
+		checkonly domain source source_ControlFlow:uml241::ControlFlow{	};
+		enforce domain target target_ControlFlow:uml241::ControlFlow{	};
+		where{
+			MarkActivityEdge(
+			source_ControlFlow,
+			target_ControlFlow);
+		}
+	}
+	relation MarkContinuation {
+		checkonly domain source source_Continuation:uml241::Continuation{	};
+		enforce domain target target_Continuation:uml241::Continuation{	};
+		where{
+			MarkInteractionFragment(
+			source_Continuation,
+			target_Continuation);
+		}
+	}
+	relation MarkConsiderIgnoreFragment {
+		checkonly domain source source_ConsiderIgnoreFragment:uml241::ConsiderIgnoreFragment{	};
+		enforce domain target target_ConsiderIgnoreFragment:uml241::ConsiderIgnoreFragment{	};
+		where{
+			MarkCombinedFragment(
+			source_ConsiderIgnoreFragment,
+			target_ConsiderIgnoreFragment);
+		}
+	}
+	relation MarkConditionalNode {
+		checkonly domain source source_ConditionalNode:uml241::ConditionalNode{	};
+		enforce domain target target_ConditionalNode:uml241::ConditionalNode{	};
+		where{
+			MarkStructuredActivityNode(
+			source_ConditionalNode,
+			target_ConditionalNode);
+		}
+	}
+	relation MarkComponentRealization {
+		checkonly domain source source_ComponentRealization:uml241::ComponentRealization{	};
+		enforce domain target target_ComponentRealization:uml241::ComponentRealization{	};
+		where{
+			MarkRealization(
+			source_ComponentRealization,
+			target_ComponentRealization);
+		}
+	}
+	relation MarkComponent {
+		checkonly domain source source_Component:uml241::Component{	};
+		enforce domain target target_Component:uml241::Component{	};
+		where{
+			MarkClass(
+			source_Component,
+			target_Component);
+		}
+	}
+	relation MarkCommunicationPath {
+		checkonly domain source source_CommunicationPath:uml241::CommunicationPath{	};
+		enforce domain target target_CommunicationPath:uml241::CommunicationPath{	};
+		where{
+			MarkAssociation(
+			source_CommunicationPath,
+			target_CommunicationPath);
+		}
+	}
+	relation MarkCombinedFragment {
+		checkonly domain source source_CombinedFragment:uml241::CombinedFragment{	};
+		enforce domain target target_CombinedFragment:uml241::CombinedFragment{	};
+		where{
+			MarkInteractionFragment(
+			source_CombinedFragment,
+			target_CombinedFragment);
+		}
+	}
+	relation MarkClearVariableAction {
+		checkonly domain source source_ClearVariableAction:uml241::ClearVariableAction{	};
+		enforce domain target target_ClearVariableAction:uml241::ClearVariableAction{	};
+		where{
+			MarkVariableAction(
+			source_ClearVariableAction,
+			target_ClearVariableAction);
+		}
+	}
+	relation MarkClearStructuralFeatureAction {
+		checkonly domain source source_ClearStructuralFeatureAction:uml241::ClearStructuralFeatureAction{	};
+		enforce domain target target_ClearStructuralFeatureAction:uml241::ClearStructuralFeatureAction{	};
+		where{
+			MarkStructuralFeatureAction(
+			source_ClearStructuralFeatureAction,
+			target_ClearStructuralFeatureAction);
+		}
+	}
+	relation MarkClearAssociationAction {
+		checkonly domain source source_ClearAssociationAction:uml241::ClearAssociationAction{	};
+		enforce domain target target_ClearAssociationAction:uml241::ClearAssociationAction{	};
+		where{
+			MarkAction(
+			source_ClearAssociationAction,
+			target_ClearAssociationAction);
+		}
+	}
+	relation MarkClause {
+		checkonly domain source source_Clause:uml241::Clause{	};
+		enforce domain target target_Clause:uml241::Clause{	};
+		where{
+			MarkElement(
+			source_Clause,
+			target_Clause);
+		}
+	}
+	relation MarkChangeEvent {
+		checkonly domain source source_ChangeEvent:uml241::ChangeEvent{	};
+		enforce domain target target_ChangeEvent:uml241::ChangeEvent{	};
+		where{
+			MarkEvent(
+			source_ChangeEvent,
+			target_ChangeEvent);
+		}
+	}
+	relation MarkCentralBufferNode {
+		checkonly domain source source_CentralBufferNode:uml241::CentralBufferNode{	};
+		enforce domain target target_CentralBufferNode:uml241::CentralBufferNode{	};
+		where{
+			MarkObjectNode(
+			source_CentralBufferNode,
+			target_CentralBufferNode);
+		}
+	}
+	relation MarkCallOperationAction {
+		checkonly domain source source_CallOperationAction:uml241::CallOperationAction{	};
+		enforce domain target target_CallOperationAction:uml241::CallOperationAction{	};
+		where{
+			MarkCallAction(
+			source_CallOperationAction,
+			target_CallOperationAction);
+		}
+	}
+	relation MarkCallEvent {
+		checkonly domain source source_CallEvent:uml241::CallEvent{	};
+		enforce domain target target_CallEvent:uml241::CallEvent{	};
+		where{
+			MarkMessageEvent(
+			source_CallEvent,
+			target_CallEvent);
+		}
+	}
+	relation MarkCallBehaviorAction {
+		checkonly domain source source_CallBehaviorAction:uml241::CallBehaviorAction{	};
+		enforce domain target target_CallBehaviorAction:uml241::CallBehaviorAction{	};
+		where{
+			MarkCallAction(
+			source_CallBehaviorAction,
+			target_CallBehaviorAction);
+		}
+	}
+	relation MarkCallAction {
+		checkonly domain source source_CallAction:uml241::CallAction{	};
+		enforce domain target target_CallAction:uml241::CallAction{	};
+		where{
+			MarkInvocationAction(
+			source_CallAction,
+			target_CallAction);
+		}
+	}
+	relation MarkInvocationAction {
+		checkonly domain source source_InvocationAction:uml241::InvocationAction{	};
+		enforce domain target target_InvocationAction:uml241::InvocationAction{	};
+		where{
+			MarkAction(
+			source_InvocationAction,
+			target_InvocationAction);
+		}
+	}
+	relation MarkBroadcastSignalAction {
+		checkonly domain source source_BroadcastSignalAction:uml241::BroadcastSignalAction{	};
+		enforce domain target target_BroadcastSignalAction:uml241::BroadcastSignalAction{	};
+		where{
+			MarkInvocationAction(
+			source_BroadcastSignalAction,
+			target_BroadcastSignalAction);
+		}
+	}
+	relation MarkBehaviorExecutionSpecification {
+		checkonly domain source source_BehaviorExecutionSpecification:uml241::BehaviorExecutionSpecification{	};
+		enforce domain target target_BehaviorExecutionSpecification:uml241::BehaviorExecutionSpecification{	};
+		where{
+			MarkExecutionSpecification(
+			source_BehaviorExecutionSpecification,
+			target_BehaviorExecutionSpecification);
+		}
+	}
+	relation MarkAssociationClass {
+		checkonly domain source source_AssociationClass:uml241::AssociationClass{	};
+		enforce domain target target_AssociationClass:uml241::AssociationClass{	};
+		where{
+			MarkClass(
+			source_AssociationClass,
+			target_AssociationClass);
+
+			MarkAssociation(
+			source_AssociationClass,
+			target_AssociationClass);
+		}
+	}
+	relation MarkMessageEvent {
+		checkonly domain source source_MessageEvent:uml241::MessageEvent{	};
+		enforce domain target target_MessageEvent:uml241::MessageEvent{	};
+		where{
+			MarkEvent(
+			source_MessageEvent,
+			target_MessageEvent);
+		}
+	}
+	relation MarkAnyReceiveEvent {
+		checkonly domain source source_AnyReceiveEvent:uml241::AnyReceiveEvent{	};
+		enforce domain target target_AnyReceiveEvent:uml241::AnyReceiveEvent{	};
+		where{
+			MarkMessageEvent(
+			source_AnyReceiveEvent,
+			target_AnyReceiveEvent);
+		}
+	}
+	relation MarkVariableAction {
+		checkonly domain source source_VariableAction:uml241::VariableAction{	};
+		enforce domain target target_VariableAction:uml241::VariableAction{	};
+		where{
+			MarkAction(
+			source_VariableAction,
+			target_VariableAction);
+		}
+	}
+	relation MarkWriteVariableAction {
+		checkonly domain source source_WriteVariableAction:uml241::WriteVariableAction{	};
+		enforce domain target target_WriteVariableAction:uml241::WriteVariableAction{	};
+		where{
+			MarkVariableAction(
+			source_WriteVariableAction,
+			target_WriteVariableAction);
+		}
+	}
+	relation MarkAddVariableValueAction {
+		checkonly domain source source_AddVariableValueAction:uml241::AddVariableValueAction{	};
+		enforce domain target target_AddVariableValueAction:uml241::AddVariableValueAction{	};
+		where{
+			MarkWriteVariableAction(
+			source_AddVariableValueAction,
+			target_AddVariableValueAction);
+		}
+	}
+	relation MarkStructuralFeatureAction {
+		checkonly domain source source_StructuralFeatureAction:uml241::StructuralFeatureAction{	};
+		enforce domain target target_StructuralFeatureAction:uml241::StructuralFeatureAction{	};
+		where{
+			MarkAction(
+			source_StructuralFeatureAction,
+			target_StructuralFeatureAction);
+		}
+	}
+	relation MarkWriteStructuralFeatureAction {
+		checkonly domain source source_WriteStructuralFeatureAction:uml241::WriteStructuralFeatureAction{	};
+		enforce domain target target_WriteStructuralFeatureAction:uml241::WriteStructuralFeatureAction{	};
+		where{
+			MarkStructuralFeatureAction(
+			source_WriteStructuralFeatureAction,
+			target_WriteStructuralFeatureAction);
+		}
+	}
+	relation MarkAddStructuralFeatureValueAction {
+		checkonly domain source source_AddStructuralFeatureValueAction:uml241::AddStructuralFeatureValueAction{	};
+		enforce domain target target_AddStructuralFeatureValueAction:uml241::AddStructuralFeatureValueAction{	};
+		where{
+			MarkWriteStructuralFeatureAction(
+			source_AddStructuralFeatureValueAction,
+			target_AddStructuralFeatureValueAction);
+		}
+	}
+	relation MarkActor {
+		checkonly domain source source_Actor:uml241::Actor{	};
+		enforce domain target target_Actor:uml241::Actor{	};
+		where{
+			MarkBehavioredClassifier(
+			source_Actor,
+			target_Actor);
+		}
+	}
+	relation MarkActivityParameterNode {
+		checkonly domain source source_ActivityParameterNode:uml241::ActivityParameterNode{	};
+		enforce domain target target_ActivityParameterNode:uml241::ActivityParameterNode{	};
+		where{
+			MarkObjectNode(
+			source_ActivityParameterNode,
+			target_ActivityParameterNode);
+		}
+	}
+	relation MarkControlNode {
+		checkonly domain source source_ControlNode:uml241::ControlNode{	};
+		enforce domain target target_ControlNode:uml241::ControlNode{	};
+		where{
+			MarkActivityNode(
+			source_ControlNode,
+			target_ControlNode);
+		}
+	}
+	relation MarkFinalNode {
+		checkonly domain source source_FinalNode:uml241::FinalNode{	};
+		enforce domain target target_FinalNode:uml241::FinalNode{	};
+		where{
+			MarkControlNode(
+			source_FinalNode,
+			target_FinalNode);
+		}
+	}
+	relation MarkActivityFinalNode {
+		checkonly domain source source_ActivityFinalNode:uml241::ActivityFinalNode{	};
+		enforce domain target target_ActivityFinalNode:uml241::ActivityFinalNode{	};
+		where{
+			MarkFinalNode(
+			source_ActivityFinalNode,
+			target_ActivityFinalNode);
+		}
+	}
+	relation MarkActionInputPin {
+		checkonly domain source source_ActionInputPin:uml241::ActionInputPin{	};
+		enforce domain target target_ActionInputPin:uml241::ActionInputPin{	};
+		where{
+			MarkInputPin(
+			source_ActionInputPin,
+			target_ActionInputPin);
+		}
+	}
+	relation MarkOccurrenceSpecification {
+		checkonly domain source source_OccurrenceSpecification:uml241::OccurrenceSpecification{	};
+		enforce domain target target_OccurrenceSpecification:uml241::OccurrenceSpecification{	};
+		where{
+			MarkInteractionFragment(
+			source_OccurrenceSpecification,
+			target_OccurrenceSpecification);
+		}
+	}
+	relation MarkGeneralOrdering {
+		checkonly domain source source_GeneralOrdering:uml241::GeneralOrdering{	};
+		enforce domain target target_GeneralOrdering:uml241::GeneralOrdering{	};
+		where{
+			MarkNamedElement(
+			source_GeneralOrdering,
+			target_GeneralOrdering);
+		}
+	}
+	relation MarkInteractionConstraint {
+		checkonly domain source source_InteractionConstraint:uml241::InteractionConstraint{	};
+		enforce domain target target_InteractionConstraint:uml241::InteractionConstraint{	};
+		where{
+			MarkConstraint(
+			source_InteractionConstraint,
+			target_InteractionConstraint);
+		}
+	}
+	relation MarkInteractionOperand {
+		checkonly domain source source_InteractionOperand:uml241::InteractionOperand{	};
+		enforce domain target target_InteractionOperand:uml241::InteractionOperand{	};
+		where{
+			MarkNamespace(
+			source_InteractionOperand,
+			target_InteractionOperand);
+
+			MarkInteractionFragment(
+			source_InteractionOperand,
+			target_InteractionOperand);
+		}
+	}
+	relation MarkInteraction {
+		checkonly domain source source_Interaction:uml241::Interaction{	};
+		enforce domain target target_Interaction:uml241::Interaction{	};
+		where{
+			MarkBehavior(
+			source_Interaction,
+			target_Interaction);
+
+			MarkInteractionFragment(
+			source_Interaction,
+			target_Interaction);
+		}
+	}
+	relation MarkMessage {
+		checkonly domain source source_Message:uml241::Message{	};
+		enforce domain target target_Message:uml241::Message{	};
+		where{
+			MarkNamedElement(
+			source_Message,
+			target_Message);
+		}
+	}
+	relation MarkMessageEnd {
+		checkonly domain source source_MessageEnd:uml241::MessageEnd{	};
+		enforce domain target target_MessageEnd:uml241::MessageEnd{	};
+		where{
+			MarkNamedElement(
+			source_MessageEnd,
+			target_MessageEnd);
+		}
+	}
+	relation MarkGate {
+		checkonly domain source source_Gate:uml241::Gate{	};
+		enforce domain target target_Gate:uml241::Gate{	};
+		where{
+			MarkMessageEnd(
+			source_Gate,
+			target_Gate);
+		}
+	}
+	relation MarkInteractionUse {
+		checkonly domain source source_InteractionUse:uml241::InteractionUse{	};
+		enforce domain target target_InteractionUse:uml241::InteractionUse{	};
+		where{
+			MarkInteractionFragment(
+			source_InteractionUse,
+			target_InteractionUse);
+		}
+	}
+	relation MarkPartDecomposition {
+		checkonly domain source source_PartDecomposition:uml241::PartDecomposition{	};
+		enforce domain target target_PartDecomposition:uml241::PartDecomposition{	};
+		where{
+			MarkInteractionUse(
+			source_PartDecomposition,
+			target_PartDecomposition);
+		}
+	}
+	relation MarkLifeline {
+		checkonly domain source source_Lifeline:uml241::Lifeline{	};
+		enforce domain target target_Lifeline:uml241::Lifeline{	};
+		where{
+			MarkNamedElement(
+			source_Lifeline,
+			target_Lifeline);
+		}
+	}
+	relation MarkInteractionFragment {
+		checkonly domain source source_InteractionFragment:uml241::InteractionFragment{	};
+		enforce domain target target_InteractionFragment:uml241::InteractionFragment{	};
+		where{
+			MarkNamedElement(
+			source_InteractionFragment,
+			target_InteractionFragment);
+		}
+	}
+	relation MarkExecutionSpecification {
+		checkonly domain source source_ExecutionSpecification:uml241::ExecutionSpecification{	};
+		enforce domain target target_ExecutionSpecification:uml241::ExecutionSpecification{	};
+		where{
+			MarkInteractionFragment(
+			source_ExecutionSpecification,
+			target_ExecutionSpecification);
+		}
+	}
+	relation MarkActionExecutionSpecification {
+		checkonly domain source source_ActionExecutionSpecification:uml241::ActionExecutionSpecification{	};
+		enforce domain target target_ActionExecutionSpecification:uml241::ActionExecutionSpecification{	};
+		where{
+			MarkExecutionSpecification(
+			source_ActionExecutionSpecification,
+			target_ActionExecutionSpecification);
+		}
+	}
+	relation MarkExceptionHandler {
+		checkonly domain source source_ExceptionHandler:uml241::ExceptionHandler{	};
+		enforce domain target target_ExceptionHandler:uml241::ExceptionHandler{	};
+		where{
+			MarkElement(
+			source_ExceptionHandler,
+			target_ExceptionHandler);
+		}
+	}
+	relation MarkInterruptibleActivityRegion {
+		checkonly domain source source_InterruptibleActivityRegion:uml241::InterruptibleActivityRegion{	};
+		enforce domain target target_InterruptibleActivityRegion:uml241::InterruptibleActivityRegion{	};
+		where{
+			MarkActivityGroup(
+			source_InterruptibleActivityRegion,
+			target_InterruptibleActivityRegion);
+		}
+	}
+	relation MarkVariable {
+		checkonly domain source source_Variable:uml241::Variable{	};
+		enforce domain target target_Variable:uml241::Variable{	};
+		where{
+			MarkConnectableElement(
+			source_Variable,
+			target_Variable);
+
+			MarkMultiplicityElement(
+			source_Variable,
+			target_Variable);
+		}
+	}
+	relation MarkOutputPin {
+		checkonly domain source source_OutputPin:uml241::OutputPin{	};
+		enforce domain target target_OutputPin:uml241::OutputPin{	};
+		where{
+			MarkPin(
+			source_OutputPin,
+			target_OutputPin);
+		}
+	}
+	relation MarkObjectNode {
+		checkonly domain source source_ObjectNode:uml241::ObjectNode{	};
+		enforce domain target target_ObjectNode:uml241::ObjectNode{	};
+		where{
+			MarkActivityNode(
+			source_ObjectNode,
+			target_ObjectNode);
+
+			MarkTypedElement(
+			source_ObjectNode,
+			target_ObjectNode);
+		}
+	}
+	relation MarkPin {
+		checkonly domain source source_Pin:uml241::Pin{	};
+		enforce domain target target_Pin:uml241::Pin{	};
+		where{
+			MarkObjectNode(
+			source_Pin,
+			target_Pin);
+
+			MarkMultiplicityElement(
+			source_Pin,
+			target_Pin);
+		}
+	}
+	relation MarkInputPin {
+		checkonly domain source source_InputPin:uml241::InputPin{	};
+		enforce domain target target_InputPin:uml241::InputPin{	};
+		where{
+			MarkPin(
+			source_InputPin,
+			target_InputPin);
+		}
+	}
+	relation MarkStructuredActivityNode {
+		checkonly domain source source_StructuredActivityNode:uml241::StructuredActivityNode{	};
+		enforce domain target target_StructuredActivityNode:uml241::StructuredActivityNode{	};
+		where{
+			MarkAction(
+			source_StructuredActivityNode,
+			target_StructuredActivityNode);
+
+			MarkNamespace(
+			source_StructuredActivityNode,
+			target_StructuredActivityNode);
+
+			MarkActivityGroup(
+			source_StructuredActivityNode,
+			target_StructuredActivityNode);
+		}
+	}
+	relation MarkActivityPartition {
+		checkonly domain source source_ActivityPartition:uml241::ActivityPartition{	};
+		enforce domain target target_ActivityPartition:uml241::ActivityPartition{	};
+		where{
+			MarkActivityGroup(
+			source_ActivityPartition,
+			target_ActivityPartition);
+		}
+	}
+	relation MarkActivityEdge {
+		checkonly domain source source_ActivityEdge:uml241::ActivityEdge{	};
+		enforce domain target target_ActivityEdge:uml241::ActivityEdge{	};
+		where{
+			MarkRedefinableElement(
+			source_ActivityEdge,
+			target_ActivityEdge);
+		}
+	}
+	relation MarkActivityGroup {
+		checkonly domain source source_ActivityGroup:uml241::ActivityGroup{	};
+		enforce domain target target_ActivityGroup:uml241::ActivityGroup{	};
+		where{
+			MarkNamedElement(
+			source_ActivityGroup,
+			target_ActivityGroup);
+		}
+	}
+	relation MarkActivity {
+		checkonly domain source source_Activity:uml241::Activity{	};
+		enforce domain target target_Activity:uml241::Activity{	};
+		where{
+			MarkBehavior(
+			source_Activity,
+			target_Activity);
+		}
+	}
+	relation MarkActivityNode {
+		checkonly domain source source_ActivityNode:uml241::ActivityNode{	};
+		enforce domain target target_ActivityNode:uml241::ActivityNode{	};
+		where{
+			MarkRedefinableElement(
+			source_ActivityNode,
+			target_ActivityNode);
+		}
+	}
+	relation MarkExecutableNode {
+		checkonly domain source source_ExecutableNode:uml241::ExecutableNode{	};
+		enforce domain target target_ExecutableNode:uml241::ExecutableNode{	};
+		where{
+			MarkActivityNode(
+			source_ExecutableNode,
+			target_ExecutableNode);
+		}
+	}
+	relation MarkAction {
+		checkonly domain source source_Action:uml241::Action{	};
+		enforce domain target target_Action:uml241::Action{	};
+		where{
+			MarkExecutableNode(
+			source_Action,
+			target_Action);
+		}
+	}
+	relation MarkAcceptEventAction {
+		checkonly domain source source_AcceptEventAction:uml241::AcceptEventAction{	};
+		enforce domain target target_AcceptEventAction:uml241::AcceptEventAction{	};
+		where{
+			MarkAction(
+			source_AcceptEventAction,
+			target_AcceptEventAction);
+		}
+	}
+	relation MarkAcceptCallAction {
+		checkonly domain source source_AcceptCallAction:uml241::AcceptCallAction{	};
+		enforce domain target target_AcceptCallAction:uml241::AcceptCallAction{	};
+		where{
+			MarkAcceptEventAction(
+			source_AcceptCallAction,
+			target_AcceptCallAction);
+		}
+	}
+	relation MarkOpaqueExpression {
+		checkonly domain source source_OpaqueExpression:uml241::OpaqueExpression{	};
+		enforce domain target target_OpaqueExpression:uml241::OpaqueExpression{	};
+		where{
+			MarkValueSpecification(
+			source_OpaqueExpression,
+			target_OpaqueExpression);
+		}
+	}
+	relation MarkImage {
+		checkonly domain source source_Image:uml241::Image{	};
+		enforce domain target target_Image:uml241::Image{	};
+		where{
+			MarkElement(
+			source_Image,
+			target_Image);
+		}
+	}
+	relation MarkConnector {
+		checkonly domain source source_Connector:uml241::Connector{	};
+		enforce domain target target_Connector:uml241::Connector{	};
+		where{
+			MarkFeature(
+			source_Connector,
+			target_Connector);
+		}
+	}
+	relation MarkClassifierTemplateParameter {
+		checkonly domain source source_ClassifierTemplateParameter:uml241::ClassifierTemplateParameter{	};
+		enforce domain target target_ClassifierTemplateParameter:uml241::ClassifierTemplateParameter{	};
+		where{
+			MarkTemplateParameter(
+			source_ClassifierTemplateParameter,
+			target_ClassifierTemplateParameter);
+		}
+	}
+	relation MarkSubstitution {
+		checkonly domain source source_Substitution:uml241::Substitution{	};
+		enforce domain target target_Substitution:uml241::Substitution{	};
+		where{
+			MarkRealization(
+			source_Substitution,
+			target_Substitution);
+		}
+	}
+	relation MarkInclude {
+		checkonly domain source source_Include:uml241::Include{	};
+		enforce domain target target_Include:uml241::Include{	};
+		where{
+			MarkNamedElement(
+			source_Include,
+			target_Include);
+
+			MarkDirectedRelationship(
+			source_Include,
+			target_Include);
+		}
+	}
+	relation MarkExtensionPoint {
+		checkonly domain source source_ExtensionPoint:uml241::ExtensionPoint{	};
+		enforce domain target target_ExtensionPoint:uml241::ExtensionPoint{	};
+		where{
+			MarkRedefinableElement(
+			source_ExtensionPoint,
+			target_ExtensionPoint);
+		}
+	}
+	relation MarkExtend {
+		checkonly domain source source_Extend:uml241::Extend{	};
+		enforce domain target target_Extend:uml241::Extend{	};
+		where{
+			MarkNamedElement(
+			source_Extend,
+			target_Extend);
+
+			MarkDirectedRelationship(
+			source_Extend,
+			target_Extend);
+		}
+	}
+	relation MarkUseCase {
+		checkonly domain source source_UseCase:uml241::UseCase{	};
+		enforce domain target target_UseCase:uml241::UseCase{	};
+		where{
+			MarkBehavioredClassifier(
+			source_UseCase,
+			target_UseCase);
+		}
+	}
+	relation MarkRedefinableTemplateSignature {
+		checkonly domain source source_RedefinableTemplateSignature:uml241::RedefinableTemplateSignature{	};
+		enforce domain target target_RedefinableTemplateSignature:uml241::RedefinableTemplateSignature{	};
+		where{
+			MarkRedefinableElement(
+			source_RedefinableTemplateSignature,
+			target_RedefinableTemplateSignature);
+
+			MarkTemplateSignature(
+			source_RedefinableTemplateSignature,
+			target_RedefinableTemplateSignature);
+		}
+	}
+	relation MarkGeneralizationSet {
+		checkonly domain source source_GeneralizationSet:uml241::GeneralizationSet{	};
+		enforce domain target target_GeneralizationSet:uml241::GeneralizationSet{	};
+		where{
+			MarkPackageableElement(
+			source_GeneralizationSet,
+			target_GeneralizationSet);
+		}
+	}
+	relation MarkGeneralization {
+		checkonly domain source source_Generalization:uml241::Generalization{	};
+		enforce domain target target_Generalization:uml241::Generalization{	};
+		where{
+			MarkDirectedRelationship(
+			source_Generalization,
+			target_Generalization);
+		}
+	}
+	relation MarkCollaboration {
+		checkonly domain source source_Collaboration:uml241::Collaboration{	};
+		enforce domain target target_Collaboration:uml241::Collaboration{	};
+		where{
+			MarkStructuredClassifier(
+			source_Collaboration,
+			target_Collaboration);
+
+			MarkBehavioredClassifier(
+			source_Collaboration,
+			target_Collaboration);
+		}
+	}
+	relation MarkCollaborationUse {
+		checkonly domain source source_CollaborationUse:uml241::CollaborationUse{	};
+		enforce domain target target_CollaborationUse:uml241::CollaborationUse{	};
+		where{
+			MarkNamedElement(
+			source_CollaborationUse,
+			target_CollaborationUse);
+		}
+	}
+	relation MarkUsage {
+		checkonly domain source source_Usage:uml241::Usage{	};
+		enforce domain target target_Usage:uml241::Usage{	};
+		where{
+			MarkDependency(
+			source_Usage,
+			target_Usage);
+		}
+	}
+	relation MarkPrimitiveType {
+		checkonly domain source source_PrimitiveType:uml241::PrimitiveType{	};
+		enforce domain target target_PrimitiveType:uml241::PrimitiveType{	};
+		where{
+			MarkDataType(
+			source_PrimitiveType,
+			target_PrimitiveType);
+		}
+	}
+	relation MarkSlot {
+		checkonly domain source source_Slot:uml241::Slot{	};
+		enforce domain target target_Slot:uml241::Slot{	};
+		where{
+			MarkElement(
+			source_Slot,
+			target_Slot);
+		}
+	}
+	relation MarkInstanceSpecification {
+		checkonly domain source source_InstanceSpecification:uml241::InstanceSpecification{	};
+		enforce domain target target_InstanceSpecification:uml241::InstanceSpecification{	};
+		where{
+			MarkDeploymentTarget(
+			source_InstanceSpecification,
+			target_InstanceSpecification);
+
+			MarkPackageableElement(
+			source_InstanceSpecification,
+			target_InstanceSpecification);
+
+			MarkDeployedArtifact(
+			source_InstanceSpecification,
+			target_InstanceSpecification);
+		}
+	}
+	relation MarkEnumerationLiteral {
+		checkonly domain source source_EnumerationLiteral:uml241::EnumerationLiteral{	};
+		enforce domain target target_EnumerationLiteral:uml241::EnumerationLiteral{	};
+		where{
+			MarkInstanceSpecification(
+			source_EnumerationLiteral,
+			target_EnumerationLiteral);
+		}
+	}
+	relation MarkEnumeration {
+		checkonly domain source source_Enumeration:uml241::Enumeration{	};
+		enforce domain target target_Enumeration:uml241::Enumeration{	};
+		where{
+			MarkDataType(
+			source_Enumeration,
+			target_Enumeration);
+		}
+	}
+	relation MarkModel {
+		checkonly domain source source_Model:uml241::Model{	};
+		enforce domain target target_Model:uml241::Model{	};
+		where{
+			MarkPackage(
+			source_Model,
+			target_Model);
+		}
+	}
+	relation MarkExtensionEnd {
+		checkonly domain source source_ExtensionEnd:uml241::ExtensionEnd{	};
+		enforce domain target target_ExtensionEnd:uml241::ExtensionEnd{	};
+		where{
+			MarkProperty(
+			source_ExtensionEnd,
+			target_ExtensionEnd);
+		}
+	}
+	relation MarkOperationTemplateParameter {
+		checkonly domain source source_OperationTemplateParameter:uml241::OperationTemplateParameter{	};
+		enforce domain target target_OperationTemplateParameter:uml241::OperationTemplateParameter{	};
+		where{
+			MarkTemplateParameter(
+			source_OperationTemplateParameter,
+			target_OperationTemplateParameter);
+		}
+	}
+	relation MarkDataType {
+		checkonly domain source source_DataType:uml241::DataType{	};
+		enforce domain target target_DataType:uml241::DataType{	};
+		where{
+			MarkClassifier(
+			source_DataType,
+			target_DataType);
+		}
+	}
+	relation MarkParameterSet {
+		checkonly domain source source_ParameterSet:uml241::ParameterSet{	};
+		enforce domain target target_ParameterSet:uml241::ParameterSet{	};
+		where{
+			MarkNamedElement(
+			source_ParameterSet,
+			target_ParameterSet);
+		}
+	}
+	relation MarkParameter {
+		checkonly domain source source_Parameter:uml241::Parameter{	};
+		enforce domain target target_Parameter:uml241::Parameter{	};
+		where{
+			MarkConnectableElement(
+			source_Parameter,
+			target_Parameter);
+
+			MarkMultiplicityElement(
+			source_Parameter,
+			target_Parameter);
+		}
+	}
+	relation MarkProtocolConformance {
+		checkonly domain source source_ProtocolConformance:uml241::ProtocolConformance{	};
+		enforce domain target target_ProtocolConformance:uml241::ProtocolConformance{	};
+		where{
+			MarkDirectedRelationship(
+			source_ProtocolConformance,
+			target_ProtocolConformance);
+		}
+	}
+	relation MarkTransition {
+		checkonly domain source source_Transition:uml241::Transition{	};
+		enforce domain target target_Transition:uml241::Transition{	};
+		where{
+			MarkNamespace(
+			source_Transition,
+			target_Transition);
+
+			MarkRedefinableElement(
+			source_Transition,
+			target_Transition);
+		}
+	}
+	relation MarkConstraint {
+		checkonly domain source source_Constraint:uml241::Constraint{	};
+		enforce domain target target_Constraint:uml241::Constraint{	};
+		where{
+			MarkPackageableElement(
+			source_Constraint,
+			target_Constraint);
+		}
+	}
+	relation MarkPort {
+		checkonly domain source source_Port:uml241::Port{	};
+		enforce domain target target_Port:uml241::Port{	};
+		where{
+			MarkProperty(
+			source_Port,
+			target_Port);
+		}
+	}
+	relation MarkEvent {
+		checkonly domain source source_Event:uml241::Event{	};
+		enforce domain target target_Event:uml241::Event{	};
+		where{
+			MarkPackageableElement(
+			source_Event,
+			target_Event);
+		}
+	}
+	relation MarkTrigger {
+		checkonly domain source source_Trigger:uml241::Trigger{	};
+		enforce domain target target_Trigger:uml241::Trigger{	};
+		where{
+			MarkNamedElement(
+			source_Trigger,
+			target_Trigger);
+		}
+	}
+	relation MarkConnectionPointReference {
+		checkonly domain source source_ConnectionPointReference:uml241::ConnectionPointReference{	};
+		enforce domain target target_ConnectionPointReference:uml241::ConnectionPointReference{	};
+		where{
+			MarkVertex(
+			source_ConnectionPointReference,
+			target_ConnectionPointReference);
+		}
+	}
+	relation MarkState {
+		checkonly domain source source_State:uml241::State{	};
+		enforce domain target target_State:uml241::State{	};
+		where{
+			MarkNamespace(
+			source_State,
+			target_State);
+
+			MarkRedefinableElement(
+			source_State,
+			target_State);
+
+			MarkVertex(
+			source_State,
+			target_State);
+		}
+	}
+	relation MarkRegion {
+		checkonly domain source source_Region:uml241::Region{	};
+		enforce domain target target_Region:uml241::Region{	};
+		where{
+			MarkNamespace(
+			source_Region,
+			target_Region);
+
+			MarkRedefinableElement(
+			source_Region,
+			target_Region);
+		}
+	}
+	relation MarkVertex {
+		checkonly domain source source_Vertex:uml241::Vertex{	};
+		enforce domain target target_Vertex:uml241::Vertex{	};
+		where{
+			MarkNamedElement(
+			source_Vertex,
+			target_Vertex);
+		}
+	}
+	relation MarkPseudostate {
+		checkonly domain source source_Pseudostate:uml241::Pseudostate{	};
+		enforce domain target target_Pseudostate:uml241::Pseudostate{	};
+		where{
+			MarkVertex(
+			source_Pseudostate,
+			target_Pseudostate);
+		}
+	}
+	relation MarkStateMachine {
+		checkonly domain source source_StateMachine:uml241::StateMachine{	};
+		enforce domain target target_StateMachine:uml241::StateMachine{	};
+		where{
+			MarkBehavior(
+			source_StateMachine,
+			target_StateMachine);
+		}
+	}
+	relation MarkProtocolStateMachine {
+		checkonly domain source source_ProtocolStateMachine:uml241::ProtocolStateMachine{	};
+		enforce domain target target_ProtocolStateMachine:uml241::ProtocolStateMachine{	};
+		where{
+			MarkStateMachine(
+			source_ProtocolStateMachine,
+			target_ProtocolStateMachine);
+		}
+	}
+	relation MarkSignal {
+		checkonly domain source source_Signal:uml241::Signal{	};
+		enforce domain target target_Signal:uml241::Signal{	};
+		where{
+			MarkClassifier(
+			source_Signal,
+			target_Signal);
+		}
+	}
+	relation MarkReception {
+		checkonly domain source source_Reception:uml241::Reception{	};
+		enforce domain target target_Reception:uml241::Reception{	};
+		where{
+			MarkBehavioralFeature(
+			source_Reception,
+			target_Reception);
+		}
+	}
+	relation MarkInterface {
+		checkonly domain source source_Interface:uml241::Interface{	};
+		enforce domain target target_Interface:uml241::Interface{	};
+		where{
+			MarkClassifier(
+			source_Interface,
+			target_Interface);
+		}
+	}
+	relation MarkRealization {
+		checkonly domain source source_Realization:uml241::Realization{	};
+		enforce domain target target_Realization:uml241::Realization{	};
+		where{
+			MarkAbstraction(
+			source_Realization,
+			target_Realization);
+		}
+	}
+	relation MarkInterfaceRealization {
+		checkonly domain source source_InterfaceRealization:uml241::InterfaceRealization{	};
+		enforce domain target target_InterfaceRealization:uml241::InterfaceRealization{	};
+		where{
+			MarkRealization(
+			source_InterfaceRealization,
+			target_InterfaceRealization);
+		}
+	}
+	relation MarkBehavioredClassifier {
+		checkonly domain source source_BehavioredClassifier:uml241::BehavioredClassifier{	};
+		enforce domain target target_BehavioredClassifier:uml241::BehavioredClassifier{	};
+		where{
+			MarkClassifier(
+			source_BehavioredClassifier,
+			target_BehavioredClassifier);
+		}
+	}
+	relation MarkBehavior {
+		checkonly domain source source_Behavior:uml241::Behavior{	};
+		enforce domain target target_Behavior:uml241::Behavior{	};
+		where{
+			MarkClass(
+			source_Behavior,
+			target_Behavior);
+		}
+	}
+	relation MarkBehavioralFeature {
+		checkonly domain source source_BehavioralFeature:uml241::BehavioralFeature{	};
+		enforce domain target target_BehavioralFeature:uml241::BehavioralFeature{	};
+		where{
+			MarkNamespace(
+			source_BehavioralFeature,
+			target_BehavioralFeature);
+
+			MarkFeature(
+			source_BehavioralFeature,
+			target_BehavioralFeature);
+		}
+	}
+	relation MarkOperation {
+		checkonly domain source source_Operation:uml241::Operation{	};
+		enforce domain target target_Operation:uml241::Operation{	};
+		where{
+			MarkBehavioralFeature(
+			source_Operation,
+			target_Operation);
+
+			MarkParameterableElement(
+			source_Operation,
+			target_Operation);
+
+			MarkTemplateableElement(
+			source_Operation,
+			target_Operation);
+		}
+	}
+	relation MarkManifestation {
+		checkonly domain source source_Manifestation:uml241::Manifestation{	};
+		enforce domain target target_Manifestation:uml241::Manifestation{	};
+		where{
+			MarkAbstraction(
+			source_Manifestation,
+			target_Manifestation);
+		}
+	}
+	relation MarkDeployedArtifact {
+		checkonly domain source source_DeployedArtifact:uml241::DeployedArtifact{	};
+		enforce domain target target_DeployedArtifact:uml241::DeployedArtifact{	};
+		where{
+			MarkNamedElement(
+			source_DeployedArtifact,
+			target_DeployedArtifact);
+		}
+	}
+	relation MarkArtifact {
+		checkonly domain source source_Artifact:uml241::Artifact{	};
+		enforce domain target target_Artifact:uml241::Artifact{	};
+		where{
+			MarkClassifier(
+			source_Artifact,
+			target_Artifact);
+
+			MarkDeployedArtifact(
+			source_Artifact,
+			target_Artifact);
+		}
+	}
+	relation MarkDeploymentSpecification {
+		checkonly domain source source_DeploymentSpecification:uml241::DeploymentSpecification{	};
+		enforce domain target target_DeploymentSpecification:uml241::DeploymentSpecification{	};
+		where{
+			MarkArtifact(
+			source_DeploymentSpecification,
+			target_DeploymentSpecification);
+		}
+	}
+	relation MarkDeployment {
+		checkonly domain source source_Deployment:uml241::Deployment{	};
+		enforce domain target target_Deployment:uml241::Deployment{	};
+		where{
+			MarkDependency(
+			source_Deployment,
+			target_Deployment);
+		}
+	}
+	relation MarkDeploymentTarget {
+		checkonly domain source source_DeploymentTarget:uml241::DeploymentTarget{	};
+		enforce domain target target_DeploymentTarget:uml241::DeploymentTarget{	};
+		where{
+			MarkNamedElement(
+			source_DeploymentTarget,
+			target_DeploymentTarget);
+		}
+	}
+	relation MarkConnectableElementTemplateParameter {
+		checkonly domain source source_ConnectableElementTemplateParameter:uml241::ConnectableElementTemplateParameter{	};
+		enforce domain target target_ConnectableElementTemplateParameter:uml241::ConnectableElementTemplateParameter{	};
+		where{
+			MarkTemplateParameter(
+			source_ConnectableElementTemplateParameter,
+			target_ConnectableElementTemplateParameter);
+		}
+	}
+	relation MarkConnectorEnd {
+		checkonly domain source source_ConnectorEnd:uml241::ConnectorEnd{	};
+		enforce domain target target_ConnectorEnd:uml241::ConnectorEnd{	};
+		where{
+			MarkMultiplicityElement(
+			source_ConnectorEnd,
+			target_ConnectorEnd);
+		}
+	}
+	relation MarkConnectableElement {
+		checkonly domain source source_ConnectableElement:uml241::ConnectableElement{	};
+		enforce domain target target_ConnectableElement:uml241::ConnectableElement{	};
+		where{
+			MarkTypedElement(
+			source_ConnectableElement,
+			target_ConnectableElement);
+
+			MarkParameterableElement(
+			source_ConnectableElement,
+			target_ConnectableElement);
+		}
+	}
+	relation MarkRedefinableElement {
+		checkonly domain source source_RedefinableElement:uml241::RedefinableElement{	};
+		enforce domain target target_RedefinableElement:uml241::RedefinableElement{	};
+		where{
+			MarkNamedElement(
+			source_RedefinableElement,
+			target_RedefinableElement);
+		}
+	}
+	relation MarkFeature {
+		checkonly domain source source_Feature:uml241::Feature{	};
+		enforce domain target target_Feature:uml241::Feature{	};
+		where{
+			MarkRedefinableElement(
+			source_Feature,
+			target_Feature);
+		}
+	}
+	relation MarkMultiplicityElement {
+		checkonly domain source source_MultiplicityElement:uml241::MultiplicityElement{	};
+		enforce domain target target_MultiplicityElement:uml241::MultiplicityElement{	};
+		where{
+			MarkElement(
+			source_MultiplicityElement,
+			target_MultiplicityElement);
+		}
+	}
+	relation MarkStructuralFeature {
+		checkonly domain source source_StructuralFeature:uml241::StructuralFeature{	};
+		enforce domain target target_StructuralFeature:uml241::StructuralFeature{	};
+		where{
+			MarkFeature(
+			source_StructuralFeature,
+			target_StructuralFeature);
+
+			MarkTypedElement(
+			source_StructuralFeature,
+			target_StructuralFeature);
+
+			MarkMultiplicityElement(
+			source_StructuralFeature,
+			target_StructuralFeature);
+		}
+	}
+	relation MarkProperty {
+		checkonly domain source source_Property:uml241::Property{	};
+		enforce domain target target_Property:uml241::Property{	};
+		where{
+			MarkStructuralFeature(
+			source_Property,
+			target_Property);
+
+			MarkConnectableElement(
+			source_Property,
+			target_Property);
+
+			MarkDeploymentTarget(
+			source_Property,
+			target_Property);
+		}
+	}
+	relation MarkAssociation {
+		checkonly domain source source_Association:uml241::Association{	};
+		enforce domain target target_Association:uml241::Association{	};
+		where{
+			MarkClassifier(
+			source_Association,
+			target_Association);
+
+			MarkRelationship(
+			source_Association,
+			target_Association);
+		}
+	}
+	relation MarkExtension {
+		checkonly domain source source_Extension:uml241::Extension{	};
+		enforce domain target target_Extension:uml241::Extension{	};
+		where{
+			MarkAssociation(
+			source_Extension,
+			target_Extension);
+		}
+	}
+	relation MarkPackageImport {
+		checkonly domain source source_PackageImport:uml241::PackageImport{	};
+		enforce domain target target_PackageImport:uml241::PackageImport{	};
+		where{
+			MarkDirectedRelationship(
+			source_PackageImport,
+			target_PackageImport);
+		}
+	}
+	relation MarkElementImport {
+		checkonly domain source source_ElementImport:uml241::ElementImport{	};
+		enforce domain target target_ElementImport:uml241::ElementImport{	};
+		where{
+			MarkDirectedRelationship(
+			source_ElementImport,
+			target_ElementImport);
+		}
+	}
+	relation MarkProfile {
+		checkonly domain source source_Profile:uml241::Profile{	};
+		enforce domain target target_Profile:uml241::Profile{	};
+		where{
+			MarkPackage(
+			source_Profile,
+			target_Profile);
+		}
+	}
+	relation MarkProfileApplication {
+		checkonly domain source source_ProfileApplication:uml241::ProfileApplication{	};
+		enforce domain target target_ProfileApplication:uml241::ProfileApplication{	};
+		where{
+			MarkDirectedRelationship(
+			source_ProfileApplication,
+			target_ProfileApplication);
+		}
+	}
+	relation MarkPackageMerge {
+		checkonly domain source source_PackageMerge:uml241::PackageMerge{	};
+		enforce domain target target_PackageMerge:uml241::PackageMerge{	};
+		where{
+			MarkDirectedRelationship(
+			source_PackageMerge,
+			target_PackageMerge);
+		}
+	}
+	relation MarkTemplateParameterSubstitution {
+		checkonly domain source source_TemplateParameterSubstitution:uml241::TemplateParameterSubstitution{	};
+		enforce domain target target_TemplateParameterSubstitution:uml241::TemplateParameterSubstitution{	};
+		where{
+			MarkElement(
+			source_TemplateParameterSubstitution,
+			target_TemplateParameterSubstitution);
+		}
+	}
+	relation MarkRelationship {
+		checkonly domain source source_Relationship:uml241::Relationship{	};
+		enforce domain target target_Relationship:uml241::Relationship{	};
+		where{
+			MarkElement(
+			source_Relationship,
+			target_Relationship);
+		}
+	}
+	relation MarkDirectedRelationship {
+		checkonly domain source source_DirectedRelationship:uml241::DirectedRelationship{	};
+		enforce domain target target_DirectedRelationship:uml241::DirectedRelationship{	};
+		where{
+			MarkRelationship(
+			source_DirectedRelationship,
+			target_DirectedRelationship);
+		}
+	}
+	relation MarkTemplateBinding {
+		checkonly domain source source_TemplateBinding:uml241::TemplateBinding{	};
+		enforce domain target target_TemplateBinding:uml241::TemplateBinding{	};
+		where{
+			MarkDirectedRelationship(
+			source_TemplateBinding,
+			target_TemplateBinding);
+		}
+	}
+	relation MarkTemplateParameter {
+		checkonly domain source source_TemplateParameter:uml241::TemplateParameter{	};
+		enforce domain target target_TemplateParameter:uml241::TemplateParameter{	};
+		where{
+			MarkElement(
+			source_TemplateParameter,
+			target_TemplateParameter);
+		}
+	}
+	relation MarkTemplateSignature {
+		checkonly domain source source_TemplateSignature:uml241::TemplateSignature{	};
+		enforce domain target target_TemplateSignature:uml241::TemplateSignature{	};
+		where{
+			MarkElement(
+			source_TemplateSignature,
+			target_TemplateSignature);
+		}
+	}
+	relation MarkTemplateableElement {
+		checkonly domain source source_TemplateableElement:uml241::TemplateableElement{	};
+		enforce domain target target_TemplateableElement:uml241::TemplateableElement{	};
+		where{
+			MarkElement(
+			source_TemplateableElement,
+			target_TemplateableElement);
+		}
+	}
+	relation MarkPackage {
+		checkonly domain source source_Package:uml241::Package{	};
+		enforce domain target target_Package:uml241::Package{	};
+		where{
+			MarkNamespace(
+			source_Package,
+			target_Package);
+
+			MarkPackageableElement(
+			source_Package,
+			target_Package);
+
+			MarkTemplateableElement(
+			source_Package,
+			target_Package);
+		}
+	}
+	relation MarkType {
+		checkonly domain source source_Type:uml241::Type{	};
+		enforce domain target target_Type:uml241::Type{	};
+		where{
+			MarkPackageableElement(
+			source_Type,
+			target_Type);
+		}
+	}
+	relation MarkTypedElement {
+		checkonly domain source source_TypedElement:uml241::TypedElement{	};
+		enforce domain target target_TypedElement:uml241::TypedElement{	};
+		where{
+			MarkNamedElement(
+			source_TypedElement,
+			target_TypedElement);
+		}
+	}
+	relation MarkValueSpecification {
+		checkonly domain source source_ValueSpecification:uml241::ValueSpecification{	};
+		enforce domain target target_ValueSpecification:uml241::ValueSpecification{	};
+		where{
+			MarkPackageableElement(
+			source_ValueSpecification,
+			target_ValueSpecification);
+
+			MarkTypedElement(
+			source_ValueSpecification,
+			target_ValueSpecification);
+		}
+	}
+	relation MarkExpression {
+		checkonly domain source source_Expression:uml241::Expression{	};
+		enforce domain target target_Expression:uml241::Expression{	};
+		where{
+			MarkValueSpecification(
+			source_Expression,
+			target_Expression);
+		}
+	}
+	relation MarkStringExpression {
+		checkonly domain source source_StringExpression:uml241::StringExpression{	};
+		enforce domain target target_StringExpression:uml241::StringExpression{	};
+		where{
+			MarkExpression(
+			source_StringExpression,
+			target_StringExpression);
+
+			MarkTemplateableElement(
+			source_StringExpression,
+			target_StringExpression);
+		}
+	}
+	relation MarkNamedElement {
+		checkonly domain source source_NamedElement:uml241::NamedElement{	};
+		enforce domain target target_NamedElement:uml241::NamedElement{	};
+		where{
+			MarkElement(
+			source_NamedElement,
+			target_NamedElement);
+		}
+	}
+	relation MarkNamespace {
+		checkonly domain source source_Namespace:uml241::Namespace{	};
+		enforce domain target target_Namespace:uml241::Namespace{	};
+		where{
+			MarkNamedElement(
+			source_Namespace,
+			target_Namespace);
+		}
+	}
+	relation MarkClassifier {
+		checkonly domain source source_Classifier:uml241::Classifier{	};
+		enforce domain target target_Classifier:uml241::Classifier{	};
+		where{
+			MarkNamespace(
+			source_Classifier,
+			target_Classifier);
+
+			MarkRedefinableElement(
+			source_Classifier,
+			target_Classifier);
+
+			MarkType(
+			source_Classifier,
+			target_Classifier);
+
+			MarkTemplateableElement(
+			source_Classifier,
+			target_Classifier);
+		}
+	}
+	relation MarkStructuredClassifier {
+		checkonly domain source source_StructuredClassifier:uml241::StructuredClassifier{	};
+		enforce domain target target_StructuredClassifier:uml241::StructuredClassifier{	};
+		where{
+			MarkClassifier(
+			source_StructuredClassifier,
+			target_StructuredClassifier);
+		}
+	}
+	relation MarkEncapsulatedClassifier {
+		checkonly domain source source_EncapsulatedClassifier:uml241::EncapsulatedClassifier{	};
+		enforce domain target target_EncapsulatedClassifier:uml241::EncapsulatedClassifier{	};
+		where{
+			MarkStructuredClassifier(
+			source_EncapsulatedClassifier,
+			target_EncapsulatedClassifier);
+		}
+	}
+	relation MarkClass {
+		checkonly domain source source_Class:uml241::Class{	};
+		enforce domain target target_Class:uml241::Class{	};
+		where{
+			MarkEncapsulatedClassifier(
+			source_Class,
+			target_Class);
+
+			MarkBehavioredClassifier(
+			source_Class,
+			target_Class);
+		}
+	}
+	relation MarkStereotype {
+		checkonly domain source source_Stereotype:uml241::Stereotype{	};
+		enforce domain target target_Stereotype:uml241::Stereotype{	};
+		where{
+			MarkClass(
+			source_Stereotype,
+			target_Stereotype);
+		}
+	}
+	relation MarkComment {
+		checkonly domain source source_Comment:uml241::Comment{	};
+		enforce domain target target_Comment:uml241::Comment{	};
+		where{
+			MarkElement(
+			source_Comment,
+			target_Comment);
+		}
+	}
+	relation MarkElement {
+		checkonly domain source sourceElement:uml241::Element{	};
+		enforce domain target targetElement:uml241::Element{	};
+		where{
+			
+		}
+	}
+	relation MarkParameterableElement {
+		checkonly domain source source_ParameterableElement:uml241::ParameterableElement{	};
+		enforce domain target target_ParameterableElement:uml241::ParameterableElement{	};
+		where{
+			MarkElement(
+			source_ParameterableElement,
+			target_ParameterableElement);
+		}
+	}
+	relation MarkPackageableElement {
+		checkonly domain source source_PackageableElement:uml241::PackageableElement{	};
+		enforce domain target target_PackageableElement:uml241::PackageableElement{	};
+		where{
+			MarkNamedElement(
+			source_PackageableElement,
+			target_PackageableElement);
+
+			MarkParameterableElement(
+			source_PackageableElement,
+			target_PackageableElement);
+		}
+	}
+	relation MarkDependency {
+		checkonly domain source source_Dependency:uml241::Dependency{	};
+		enforce domain target target_Dependency:uml241::Dependency{	};
+		where{
+			MarkPackageableElement(
+			source_Dependency,
+			target_Dependency);
+
+			MarkDirectedRelationship(
+			source_Dependency,
+			target_Dependency);
+		}
+	}
+	relation MarkAbstraction {
+		checkonly domain source source_Abstraction:uml241::Abstraction{	};
+		enforce domain target target_Abstraction:uml241::Abstraction{	};
+		where{
+			MarkDependency(
+			source_Abstraction,
+			target_Abstraction);
+		}
+	}
+top 	relation CopyValueSpecificationAction {
+		checkonly domain source source_ValueSpecificationAction:uml241::ValueSpecificationAction{	};
+		enforce domain target target_ValueSpecificationAction:uml241::ValueSpecificationAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkValueSpecificationAction(
+			source_ValueSpecificationAction,
+			target_ValueSpecificationAction);
+		}
+	}
+top 	relation CopyValuePin {
+		checkonly domain source source_ValuePin:uml241::ValuePin{	};
+		enforce domain target target_ValuePin:uml241::ValuePin{	};
+
+		when{
+			
+		}
+		where{
+			MarkValuePin(
+			source_ValuePin,
+			target_ValuePin);
+		}
+	}
+top 	relation CopyUnmarshallAction {
+		checkonly domain source source_UnmarshallAction:uml241::UnmarshallAction{	};
+		enforce domain target target_UnmarshallAction:uml241::UnmarshallAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkUnmarshallAction(
+			source_UnmarshallAction,
+			target_UnmarshallAction);
+		}
+	}
+top 	relation CopyTimeObservation {
+		checkonly domain source source_TimeObservation:uml241::TimeObservation{	};
+		enforce domain target target_TimeObservation:uml241::TimeObservation{	};
+
+		when{
+			
+		}
+		where{
+			MarkTimeObservation(
+			source_TimeObservation,
+			target_TimeObservation);
+		}
+	}
+top 	relation CopyTimeEvent {
+		checkonly domain source source_TimeEvent:uml241::TimeEvent{	};
+		enforce domain target target_TimeEvent:uml241::TimeEvent{	};
+
+		when{
+			
+		}
+		where{
+			MarkTimeEvent(
+			source_TimeEvent,
+			target_TimeEvent);
+		}
+	}
+top 	relation CopyTimeExpression {
+		checkonly domain source source_TimeExpression:uml241::TimeExpression{	};
+		enforce domain target target_TimeExpression:uml241::TimeExpression{	};
+
+		when{
+			
+		}
+		where{
+			MarkTimeExpression(
+			source_TimeExpression,
+			target_TimeExpression);
+		}
+	}
+top 	relation CopyTimeInterval {
+		checkonly domain source source_TimeInterval:uml241::TimeInterval{	};
+		enforce domain target target_TimeInterval:uml241::TimeInterval{	};
+
+		when{
+			
+		}
+		where{
+			MarkTimeInterval(
+			source_TimeInterval,
+			target_TimeInterval);
+		}
+	}
+top 	relation CopyTimeConstraint {
+		checkonly domain source source_TimeConstraint:uml241::TimeConstraint{	};
+		enforce domain target target_TimeConstraint:uml241::TimeConstraint{	};
+
+		when{
+			
+		}
+		where{
+			MarkTimeConstraint(
+			source_TimeConstraint,
+			target_TimeConstraint);
+		}
+	}
+top 	relation CopyTestIdentityAction {
+		checkonly domain source source_TestIdentityAction:uml241::TestIdentityAction{	};
+		enforce domain target target_TestIdentityAction:uml241::TestIdentityAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkTestIdentityAction(
+			source_TestIdentityAction,
+			target_TestIdentityAction);
+		}
+	}
+top 	relation CopyStateInvariant {
+		checkonly domain source source_StateInvariant:uml241::StateInvariant{	};
+		enforce domain target target_StateInvariant:uml241::StateInvariant{	};
+
+		when{
+			
+		}
+		where{
+			MarkStateInvariant(
+			source_StateInvariant,
+			target_StateInvariant);
+		}
+	}
+top 	relation CopyStartObjectBehaviorAction {
+		checkonly domain source source_StartObjectBehaviorAction:uml241::StartObjectBehaviorAction{	};
+		enforce domain target target_StartObjectBehaviorAction:uml241::StartObjectBehaviorAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkStartObjectBehaviorAction(
+			source_StartObjectBehaviorAction,
+			target_StartObjectBehaviorAction);
+		}
+	}
+top 	relation CopyStartClassifierBehaviorAction {
+		checkonly domain source source_StartClassifierBehaviorAction:uml241::StartClassifierBehaviorAction{	};
+		enforce domain target target_StartClassifierBehaviorAction:uml241::StartClassifierBehaviorAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkStartClassifierBehaviorAction(
+			source_StartClassifierBehaviorAction,
+			target_StartClassifierBehaviorAction);
+		}
+	}
+top 	relation CopySignalEvent {
+		checkonly domain source source_SignalEvent:uml241::SignalEvent{	};
+		enforce domain target target_SignalEvent:uml241::SignalEvent{	};
+
+		when{
+			
+		}
+		where{
+			MarkSignalEvent(
+			source_SignalEvent,
+			target_SignalEvent);
+		}
+	}
+top 	relation CopySequenceNode {
+		checkonly domain source source_SequenceNode:uml241::SequenceNode{	};
+		enforce domain target target_SequenceNode:uml241::SequenceNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkSequenceNode(
+			source_SequenceNode,
+			target_SequenceNode);
+		}
+	}
+top 	relation CopySendSignalAction {
+		checkonly domain source source_SendSignalAction:uml241::SendSignalAction{	};
+		enforce domain target target_SendSignalAction:uml241::SendSignalAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkSendSignalAction(
+			source_SendSignalAction,
+			target_SendSignalAction);
+		}
+	}
+top 	relation CopySendObjectAction {
+		checkonly domain source source_SendObjectAction:uml241::SendObjectAction{	};
+		enforce domain target target_SendObjectAction:uml241::SendObjectAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkSendObjectAction(
+			source_SendObjectAction,
+			target_SendObjectAction);
+		}
+	}
+top 	relation CopyReplyAction {
+		checkonly domain source source_ReplyAction:uml241::ReplyAction{	};
+		enforce domain target target_ReplyAction:uml241::ReplyAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReplyAction(
+			source_ReplyAction,
+			target_ReplyAction);
+		}
+	}
+top 	relation CopyRemoveVariableValueAction {
+		checkonly domain source source_RemoveVariableValueAction:uml241::RemoveVariableValueAction{	};
+		enforce domain target target_RemoveVariableValueAction:uml241::RemoveVariableValueAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkRemoveVariableValueAction(
+			source_RemoveVariableValueAction,
+			target_RemoveVariableValueAction);
+		}
+	}
+top 	relation CopyRemoveStructuralFeatureValueAction {
+		checkonly domain source source_RemoveStructuralFeatureValueAction:uml241::RemoveStructuralFeatureValueAction{	};
+		enforce domain target target_RemoveStructuralFeatureValueAction:uml241::RemoveStructuralFeatureValueAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkRemoveStructuralFeatureValueAction(
+			source_RemoveStructuralFeatureValueAction,
+			target_RemoveStructuralFeatureValueAction);
+		}
+	}
+top 	relation CopyReduceAction {
+		checkonly domain source source_ReduceAction:uml241::ReduceAction{	};
+		enforce domain target target_ReduceAction:uml241::ReduceAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReduceAction(
+			source_ReduceAction,
+			target_ReduceAction);
+		}
+	}
+top 	relation CopyReclassifyObjectAction {
+		checkonly domain source source_ReclassifyObjectAction:uml241::ReclassifyObjectAction{	};
+		enforce domain target target_ReclassifyObjectAction:uml241::ReclassifyObjectAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReclassifyObjectAction(
+			source_ReclassifyObjectAction,
+			target_ReclassifyObjectAction);
+		}
+	}
+top 	relation CopyReadVariableAction {
+		checkonly domain source source_ReadVariableAction:uml241::ReadVariableAction{	};
+		enforce domain target target_ReadVariableAction:uml241::ReadVariableAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReadVariableAction(
+			source_ReadVariableAction,
+			target_ReadVariableAction);
+		}
+	}
+top 	relation CopyReadStructuralFeatureAction {
+		checkonly domain source source_ReadStructuralFeatureAction:uml241::ReadStructuralFeatureAction{	};
+		enforce domain target target_ReadStructuralFeatureAction:uml241::ReadStructuralFeatureAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReadStructuralFeatureAction(
+			source_ReadStructuralFeatureAction,
+			target_ReadStructuralFeatureAction);
+		}
+	}
+top 	relation CopyReadSelfAction {
+		checkonly domain source source_ReadSelfAction:uml241::ReadSelfAction{	};
+		enforce domain target target_ReadSelfAction:uml241::ReadSelfAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReadSelfAction(
+			source_ReadSelfAction,
+			target_ReadSelfAction);
+		}
+	}
+top 	relation CopyReadLinkObjectEndQualifierAction {
+		checkonly domain source source_ReadLinkObjectEndQualifierAction:uml241::ReadLinkObjectEndQualifierAction{	};
+		enforce domain target target_ReadLinkObjectEndQualifierAction:uml241::ReadLinkObjectEndQualifierAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReadLinkObjectEndQualifierAction(
+			source_ReadLinkObjectEndQualifierAction,
+			target_ReadLinkObjectEndQualifierAction);
+		}
+	}
+top 	relation CopyReadLinkObjectEndAction {
+		checkonly domain source source_ReadLinkObjectEndAction:uml241::ReadLinkObjectEndAction{	};
+		enforce domain target target_ReadLinkObjectEndAction:uml241::ReadLinkObjectEndAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReadLinkObjectEndAction(
+			source_ReadLinkObjectEndAction,
+			target_ReadLinkObjectEndAction);
+		}
+	}
+top 	relation CopyReadLinkAction {
+		checkonly domain source source_ReadLinkAction:uml241::ReadLinkAction{	};
+		enforce domain target target_ReadLinkAction:uml241::ReadLinkAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReadLinkAction(
+			source_ReadLinkAction,
+			target_ReadLinkAction);
+		}
+	}
+top 	relation CopyReadIsClassifiedObjectAction {
+		checkonly domain source source_ReadIsClassifiedObjectAction:uml241::ReadIsClassifiedObjectAction{	};
+		enforce domain target target_ReadIsClassifiedObjectAction:uml241::ReadIsClassifiedObjectAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReadIsClassifiedObjectAction(
+			source_ReadIsClassifiedObjectAction,
+			target_ReadIsClassifiedObjectAction);
+		}
+	}
+top 	relation CopyReadExtentAction {
+		checkonly domain source source_ReadExtentAction:uml241::ReadExtentAction{	};
+		enforce domain target target_ReadExtentAction:uml241::ReadExtentAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkReadExtentAction(
+			source_ReadExtentAction,
+			target_ReadExtentAction);
+		}
+	}
+top 	relation CopyRaiseExceptionAction {
+		checkonly domain source source_RaiseExceptionAction:uml241::RaiseExceptionAction{	};
+		enforce domain target target_RaiseExceptionAction:uml241::RaiseExceptionAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkRaiseExceptionAction(
+			source_RaiseExceptionAction,
+			target_RaiseExceptionAction);
+		}
+	}
+top 	relation CopyProtocolTransition {
+		checkonly domain source source_ProtocolTransition:uml241::ProtocolTransition{	};
+		enforce domain target target_ProtocolTransition:uml241::ProtocolTransition{	};
+
+		when{
+			
+		}
+		where{
+			MarkProtocolTransition(
+			source_ProtocolTransition,
+			target_ProtocolTransition);
+		}
+	}
+top 	relation CopyOpaqueAction {
+		checkonly domain source source_OpaqueAction:uml241::OpaqueAction{	};
+		enforce domain target target_OpaqueAction:uml241::OpaqueAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkOpaqueAction(
+			source_OpaqueAction,
+			target_OpaqueAction);
+		}
+	}
+top 	relation CopyMergeNode {
+		checkonly domain source source_MergeNode:uml241::MergeNode{	};
+		enforce domain target target_MergeNode:uml241::MergeNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkMergeNode(
+			source_MergeNode,
+			target_MergeNode);
+		}
+	}
+top 	relation CopyLoopNode {
+		checkonly domain source source_LoopNode:uml241::LoopNode{	};
+		enforce domain target target_LoopNode:uml241::LoopNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkLoopNode(
+			source_LoopNode,
+			target_LoopNode);
+		}
+	}
+top 	relation CopyLiteralUnlimitedNatural {
+		checkonly domain source source_LiteralUnlimitedNatural:uml241::LiteralUnlimitedNatural{	};
+		enforce domain target target_LiteralUnlimitedNatural:uml241::LiteralUnlimitedNatural{	};
+
+		when{
+			
+		}
+		where{
+			MarkLiteralUnlimitedNatural(
+			source_LiteralUnlimitedNatural,
+			target_LiteralUnlimitedNatural);
+		}
+	}
+top 	relation CopyLiteralString {
+		checkonly domain source source_LiteralString:uml241::LiteralString{	};
+		enforce domain target target_LiteralString:uml241::LiteralString{	};
+
+		when{
+			
+		}
+		where{
+			MarkLiteralString(
+			source_LiteralString,
+			target_LiteralString);
+		}
+	}
+top 	relation CopyLiteralReal {
+		checkonly domain source source_LiteralReal:uml241::LiteralReal{	};
+		enforce domain target target_LiteralReal:uml241::LiteralReal{	};
+
+		when{
+			
+		}
+		where{
+			MarkLiteralReal(
+			source_LiteralReal,
+			target_LiteralReal);
+		}
+	}
+top 	relation CopyLiteralNull {
+		checkonly domain source source_LiteralNull:uml241::LiteralNull{	};
+		enforce domain target target_LiteralNull:uml241::LiteralNull{	};
+
+		when{
+			
+		}
+		where{
+			MarkLiteralNull(
+			source_LiteralNull,
+			target_LiteralNull);
+		}
+	}
+top 	relation CopyLiteralInteger {
+		checkonly domain source source_LiteralInteger:uml241::LiteralInteger{	};
+		enforce domain target target_LiteralInteger:uml241::LiteralInteger{	};
+
+		when{
+			
+		}
+		where{
+			MarkLiteralInteger(
+			source_LiteralInteger,
+			target_LiteralInteger);
+		}
+	}
+top 	relation CopyLiteralBoolean {
+		checkonly domain source source_LiteralBoolean:uml241::LiteralBoolean{	};
+		enforce domain target target_LiteralBoolean:uml241::LiteralBoolean{	};
+
+		when{
+			
+		}
+		where{
+			MarkLiteralBoolean(
+			source_LiteralBoolean,
+			target_LiteralBoolean);
+		}
+	}
+top 	relation CopyJoinNode {
+		checkonly domain source source_JoinNode:uml241::JoinNode{	};
+		enforce domain target target_JoinNode:uml241::JoinNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkJoinNode(
+			source_JoinNode,
+			target_JoinNode);
+		}
+	}
+top 	relation CopyInstanceValue {
+		checkonly domain source source_InstanceValue:uml241::InstanceValue{	};
+		enforce domain target target_InstanceValue:uml241::InstanceValue{	};
+
+		when{
+			
+		}
+		where{
+			MarkInstanceValue(
+			source_InstanceValue,
+			target_InstanceValue);
+		}
+	}
+top 	relation CopyInitialNode {
+		checkonly domain source source_InitialNode:uml241::InitialNode{	};
+		enforce domain target target_InitialNode:uml241::InitialNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkInitialNode(
+			source_InitialNode,
+			target_InitialNode);
+		}
+	}
+top 	relation CopyInformationItem {
+		checkonly domain source source_InformationItem:uml241::InformationItem{	};
+		enforce domain target target_InformationItem:uml241::InformationItem{	};
+
+		when{
+			
+		}
+		where{
+			MarkInformationItem(
+			source_InformationItem,
+			target_InformationItem);
+		}
+	}
+top 	relation CopyInformationFlow {
+		checkonly domain source source_InformationFlow:uml241::InformationFlow{	};
+		enforce domain target target_InformationFlow:uml241::InformationFlow{	};
+
+		when{
+			
+		}
+		where{
+			MarkInformationFlow(
+			source_InformationFlow,
+			target_InformationFlow);
+		}
+	}
+top 	relation CopyOpaqueBehavior {
+		checkonly domain source source_OpaqueBehavior:uml241::OpaqueBehavior{	};
+		enforce domain target target_OpaqueBehavior:uml241::OpaqueBehavior{	};
+
+		when{
+			not(MarkFunctionBehavior(
+			source_OpaqueBehavior,
+			target_OpaqueBehavior));
+		}
+		where{
+			MarkOpaqueBehavior(
+			source_OpaqueBehavior,
+			target_OpaqueBehavior);
+		}
+	}
+top 	relation CopyFunctionBehavior {
+		checkonly domain source source_FunctionBehavior:uml241::FunctionBehavior{	};
+		enforce domain target target_FunctionBehavior:uml241::FunctionBehavior{	};
+
+		when{
+			
+		}
+		where{
+			MarkFunctionBehavior(
+			source_FunctionBehavior,
+			target_FunctionBehavior);
+		}
+	}
+top 	relation CopyForkNode {
+		checkonly domain source source_ForkNode:uml241::ForkNode{	};
+		enforce domain target target_ForkNode:uml241::ForkNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkForkNode(
+			source_ForkNode,
+			target_ForkNode);
+		}
+	}
+top 	relation CopyFlowFinalNode {
+		checkonly domain source source_FlowFinalNode:uml241::FlowFinalNode{	};
+		enforce domain target target_FlowFinalNode:uml241::FlowFinalNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkFlowFinalNode(
+			source_FlowFinalNode,
+			target_FlowFinalNode);
+		}
+	}
+top 	relation CopyFinalState {
+		checkonly domain source source_FinalState:uml241::FinalState{	};
+		enforce domain target target_FinalState:uml241::FinalState{	};
+
+		when{
+			
+		}
+		where{
+			MarkFinalState(
+			source_FinalState,
+			target_FinalState);
+		}
+	}
+top 	relation CopyExpansionRegion {
+		checkonly domain source source_ExpansionRegion:uml241::ExpansionRegion{	};
+		enforce domain target target_ExpansionRegion:uml241::ExpansionRegion{	};
+
+		when{
+			
+		}
+		where{
+			MarkExpansionRegion(
+			source_ExpansionRegion,
+			target_ExpansionRegion);
+		}
+	}
+top 	relation CopyExpansionNode {
+		checkonly domain source source_ExpansionNode:uml241::ExpansionNode{	};
+		enforce domain target target_ExpansionNode:uml241::ExpansionNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkExpansionNode(
+			source_ExpansionNode,
+			target_ExpansionNode);
+		}
+	}
+top 	relation CopyExecutionOccurrenceSpecification {
+		checkonly domain source source_ExecutionOccurrenceSpecification:uml241::ExecutionOccurrenceSpecification{	};
+		enforce domain target target_ExecutionOccurrenceSpecification:uml241::ExecutionOccurrenceSpecification{	};
+
+		when{
+			
+		}
+		where{
+			MarkExecutionOccurrenceSpecification(
+			source_ExecutionOccurrenceSpecification,
+			target_ExecutionOccurrenceSpecification);
+		}
+	}
+top 	relation CopyExecutionEnvironment {
+		checkonly domain source source_ExecutionEnvironment:uml241::ExecutionEnvironment{	};
+		enforce domain target target_ExecutionEnvironment:uml241::ExecutionEnvironment{	};
+
+		when{
+			
+		}
+		where{
+			MarkExecutionEnvironment(
+			source_ExecutionEnvironment,
+			target_ExecutionEnvironment);
+		}
+	}
+top 	relation CopyDurationObservation {
+		checkonly domain source source_DurationObservation:uml241::DurationObservation{	};
+		enforce domain target target_DurationObservation:uml241::DurationObservation{	};
+
+		when{
+			
+		}
+		where{
+			MarkDurationObservation(
+			source_DurationObservation,
+			target_DurationObservation);
+		}
+	}
+top 	relation CopyDurationInterval {
+		checkonly domain source source_DurationInterval:uml241::DurationInterval{	};
+		enforce domain target target_DurationInterval:uml241::DurationInterval{	};
+
+		when{
+			
+		}
+		where{
+			MarkDurationInterval(
+			source_DurationInterval,
+			target_DurationInterval);
+		}
+	}
+top 	relation CopyInterval {
+		checkonly domain source source_Interval:uml241::Interval{	};
+		enforce domain target target_Interval:uml241::Interval{	};
+
+		when{
+			not(MarkTimeInterval(
+			source_Interval,
+			target_Interval));
+
+			not(MarkDurationInterval(
+			source_Interval,
+			target_Interval));
+		}
+		where{
+			MarkInterval(
+			source_Interval,
+			target_Interval);
+		}
+	}
+top 	relation CopyIntervalConstraint {
+		checkonly domain source source_IntervalConstraint:uml241::IntervalConstraint{	};
+		enforce domain target target_IntervalConstraint:uml241::IntervalConstraint{	};
+
+		when{
+			not(MarkTimeConstraint(
+			source_IntervalConstraint,
+			target_IntervalConstraint));
+
+			not(MarkDurationConstraint(
+			source_IntervalConstraint,
+			target_IntervalConstraint));
+		}
+		where{
+			MarkIntervalConstraint(
+			source_IntervalConstraint,
+			target_IntervalConstraint);
+		}
+	}
+top 	relation CopyDurationConstraint {
+		checkonly domain source source_DurationConstraint:uml241::DurationConstraint{	};
+		enforce domain target target_DurationConstraint:uml241::DurationConstraint{	};
+
+		when{
+			
+		}
+		where{
+			MarkDurationConstraint(
+			source_DurationConstraint,
+			target_DurationConstraint);
+		}
+	}
+top 	relation CopyDuration {
+		checkonly domain source source_Duration:uml241::Duration{	};
+		enforce domain target target_Duration:uml241::Duration{	};
+
+		when{
+			
+		}
+		where{
+			MarkDuration(
+			source_Duration,
+			target_Duration);
+		}
+	}
+top 	relation CopyNode {
+		checkonly domain source source_Node:uml241::Node{	};
+		enforce domain target target_Node:uml241::Node{	};
+
+		when{
+			not(MarkExecutionEnvironment(
+			source_Node,
+			target_Node));
+
+			not(MarkDevice(
+			source_Node,
+			target_Node));
+		}
+		where{
+			MarkNode(
+			source_Node,
+			target_Node);
+		}
+	}
+top 	relation CopyDevice {
+		checkonly domain source source_Device:uml241::Device{	};
+		enforce domain target target_Device:uml241::Device{	};
+
+		when{
+			
+		}
+		where{
+			MarkDevice(
+			source_Device,
+			target_Device);
+		}
+	}
+top 	relation CopyMessageOccurrenceSpecification {
+		checkonly domain source source_MessageOccurrenceSpecification:uml241::MessageOccurrenceSpecification{	};
+		enforce domain target target_MessageOccurrenceSpecification:uml241::MessageOccurrenceSpecification{	};
+
+		when{
+			not(MarkDestructionOccurrenceSpecification(
+			source_MessageOccurrenceSpecification,
+			target_MessageOccurrenceSpecification));
+		}
+		where{
+			MarkMessageOccurrenceSpecification(
+			source_MessageOccurrenceSpecification,
+			target_MessageOccurrenceSpecification);
+		}
+	}
+top 	relation CopyDestructionOccurrenceSpecification {
+		checkonly domain source source_DestructionOccurrenceSpecification:uml241::DestructionOccurrenceSpecification{	};
+		enforce domain target target_DestructionOccurrenceSpecification:uml241::DestructionOccurrenceSpecification{	};
+
+		when{
+			
+		}
+		where{
+			MarkDestructionOccurrenceSpecification(
+			source_DestructionOccurrenceSpecification,
+			target_DestructionOccurrenceSpecification);
+		}
+	}
+top 	relation CopyDestroyObjectAction {
+		checkonly domain source source_DestroyObjectAction:uml241::DestroyObjectAction{	};
+		enforce domain target target_DestroyObjectAction:uml241::DestroyObjectAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkDestroyObjectAction(
+			source_DestroyObjectAction,
+			target_DestroyObjectAction);
+		}
+	}
+top 	relation CopyLinkEndDestructionData {
+		checkonly domain source source_LinkEndDestructionData:uml241::LinkEndDestructionData{	};
+		enforce domain target target_LinkEndDestructionData:uml241::LinkEndDestructionData{	};
+
+		when{
+			
+		}
+		where{
+			MarkLinkEndDestructionData(
+			source_LinkEndDestructionData,
+			target_LinkEndDestructionData);
+		}
+	}
+top 	relation CopyDestroyLinkAction {
+		checkonly domain source source_DestroyLinkAction:uml241::DestroyLinkAction{	};
+		enforce domain target target_DestroyLinkAction:uml241::DestroyLinkAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkDestroyLinkAction(
+			source_DestroyLinkAction,
+			target_DestroyLinkAction);
+		}
+	}
+top 	relation CopyObjectFlow {
+		checkonly domain source source_ObjectFlow:uml241::ObjectFlow{	};
+		enforce domain target target_ObjectFlow:uml241::ObjectFlow{	};
+
+		when{
+			
+		}
+		where{
+			MarkObjectFlow(
+			source_ObjectFlow,
+			target_ObjectFlow);
+		}
+	}
+top 	relation CopyDecisionNode {
+		checkonly domain source source_DecisionNode:uml241::DecisionNode{	};
+		enforce domain target target_DecisionNode:uml241::DecisionNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkDecisionNode(
+			source_DecisionNode,
+			target_DecisionNode);
+		}
+	}
+top 	relation CopyDataStoreNode {
+		checkonly domain source source_DataStoreNode:uml241::DataStoreNode{	};
+		enforce domain target target_DataStoreNode:uml241::DataStoreNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkDataStoreNode(
+			source_DataStoreNode,
+			target_DataStoreNode);
+		}
+	}
+top 	relation CopyCreateObjectAction {
+		checkonly domain source source_CreateObjectAction:uml241::CreateObjectAction{	};
+		enforce domain target target_CreateObjectAction:uml241::CreateObjectAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkCreateObjectAction(
+			source_CreateObjectAction,
+			target_CreateObjectAction);
+		}
+	}
+top 	relation CopyCreateLinkObjectAction {
+		checkonly domain source source_CreateLinkObjectAction:uml241::CreateLinkObjectAction{	};
+		enforce domain target target_CreateLinkObjectAction:uml241::CreateLinkObjectAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkCreateLinkObjectAction(
+			source_CreateLinkObjectAction,
+			target_CreateLinkObjectAction);
+		}
+	}
+top 	relation CopyLinkEndCreationData {
+		checkonly domain source source_LinkEndCreationData:uml241::LinkEndCreationData{	};
+		enforce domain target target_LinkEndCreationData:uml241::LinkEndCreationData{	};
+
+		when{
+			
+		}
+		where{
+			MarkLinkEndCreationData(
+			source_LinkEndCreationData,
+			target_LinkEndCreationData);
+		}
+	}
+top 	relation CopyQualifierValue {
+		checkonly domain source source_QualifierValue:uml241::QualifierValue{	};
+		enforce domain target target_QualifierValue:uml241::QualifierValue{	};
+
+		when{
+			
+		}
+		where{
+			MarkQualifierValue(
+			source_QualifierValue,
+			target_QualifierValue);
+		}
+	}
+top 	relation CopyLinkEndData {
+		checkonly domain source source_LinkEndData:uml241::LinkEndData{	};
+		enforce domain target target_LinkEndData:uml241::LinkEndData{	};
+
+		when{
+			not(MarkLinkEndDestructionData(
+			source_LinkEndData,
+			target_LinkEndData));
+
+			not(MarkLinkEndCreationData(
+			source_LinkEndData,
+			target_LinkEndData));
+		}
+		where{
+			MarkLinkEndData(
+			source_LinkEndData,
+			target_LinkEndData);
+		}
+	}
+top 	relation CopyCreateLinkAction {
+		checkonly domain source source_CreateLinkAction:uml241::CreateLinkAction{	};
+		enforce domain target target_CreateLinkAction:uml241::CreateLinkAction{	};
+
+		when{
+			not(MarkCreateLinkObjectAction(
+			source_CreateLinkAction,
+			target_CreateLinkAction));
+		}
+		where{
+			MarkCreateLinkAction(
+			source_CreateLinkAction,
+			target_CreateLinkAction);
+		}
+	}
+top 	relation CopyControlFlow {
+		checkonly domain source source_ControlFlow:uml241::ControlFlow{	};
+		enforce domain target target_ControlFlow:uml241::ControlFlow{	};
+
+		when{
+			
+		}
+		where{
+			MarkControlFlow(
+			source_ControlFlow,
+			target_ControlFlow);
+		}
+	}
+top 	relation CopyContinuation {
+		checkonly domain source source_Continuation:uml241::Continuation{	};
+		enforce domain target target_Continuation:uml241::Continuation{	};
+
+		when{
+			
+		}
+		where{
+			MarkContinuation(
+			source_Continuation,
+			target_Continuation);
+		}
+	}
+top 	relation CopyConsiderIgnoreFragment {
+		checkonly domain source source_ConsiderIgnoreFragment:uml241::ConsiderIgnoreFragment{	};
+		enforce domain target target_ConsiderIgnoreFragment:uml241::ConsiderIgnoreFragment{	};
+
+		when{
+			
+		}
+		where{
+			MarkConsiderIgnoreFragment(
+			source_ConsiderIgnoreFragment,
+			target_ConsiderIgnoreFragment);
+		}
+	}
+top 	relation CopyConditionalNode {
+		checkonly domain source source_ConditionalNode:uml241::ConditionalNode{	};
+		enforce domain target target_ConditionalNode:uml241::ConditionalNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkConditionalNode(
+			source_ConditionalNode,
+			target_ConditionalNode);
+		}
+	}
+top 	relation CopyComponentRealization {
+		checkonly domain source source_ComponentRealization:uml241::ComponentRealization{	};
+		enforce domain target target_ComponentRealization:uml241::ComponentRealization{	};
+
+		when{
+			
+		}
+		where{
+			MarkComponentRealization(
+			source_ComponentRealization,
+			target_ComponentRealization);
+		}
+	}
+top 	relation CopyComponent {
+		checkonly domain source source_Component:uml241::Component{	};
+		enforce domain target target_Component:uml241::Component{	};
+
+		when{
+			
+		}
+		where{
+			MarkComponent(
+			source_Component,
+			target_Component);
+		}
+	}
+top 	relation CopyCommunicationPath {
+		checkonly domain source source_CommunicationPath:uml241::CommunicationPath{	};
+		enforce domain target target_CommunicationPath:uml241::CommunicationPath{	};
+
+		when{
+			
+		}
+		where{
+			MarkCommunicationPath(
+			source_CommunicationPath,
+			target_CommunicationPath);
+		}
+	}
+top 	relation CopyCombinedFragment {
+		checkonly domain source source_CombinedFragment:uml241::CombinedFragment{	};
+		enforce domain target target_CombinedFragment:uml241::CombinedFragment{	};
+
+		when{
+			not(MarkConsiderIgnoreFragment(
+			source_CombinedFragment,
+			target_CombinedFragment));
+		}
+		where{
+			MarkCombinedFragment(
+			source_CombinedFragment,
+			target_CombinedFragment);
+		}
+	}
+top 	relation CopyClearVariableAction {
+		checkonly domain source source_ClearVariableAction:uml241::ClearVariableAction{	};
+		enforce domain target target_ClearVariableAction:uml241::ClearVariableAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkClearVariableAction(
+			source_ClearVariableAction,
+			target_ClearVariableAction);
+		}
+	}
+top 	relation CopyClearStructuralFeatureAction {
+		checkonly domain source source_ClearStructuralFeatureAction:uml241::ClearStructuralFeatureAction{	};
+		enforce domain target target_ClearStructuralFeatureAction:uml241::ClearStructuralFeatureAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkClearStructuralFeatureAction(
+			source_ClearStructuralFeatureAction,
+			target_ClearStructuralFeatureAction);
+		}
+	}
+top 	relation CopyClearAssociationAction {
+		checkonly domain source source_ClearAssociationAction:uml241::ClearAssociationAction{	};
+		enforce domain target target_ClearAssociationAction:uml241::ClearAssociationAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkClearAssociationAction(
+			source_ClearAssociationAction,
+			target_ClearAssociationAction);
+		}
+	}
+top 	relation CopyClause {
+		checkonly domain source source_Clause:uml241::Clause{	};
+		enforce domain target target_Clause:uml241::Clause{	};
+
+		when{
+			
+		}
+		where{
+			MarkClause(
+			source_Clause,
+			target_Clause);
+		}
+	}
+top 	relation CopyChangeEvent {
+		checkonly domain source source_ChangeEvent:uml241::ChangeEvent{	};
+		enforce domain target target_ChangeEvent:uml241::ChangeEvent{	};
+
+		when{
+			
+		}
+		where{
+			MarkChangeEvent(
+			source_ChangeEvent,
+			target_ChangeEvent);
+		}
+	}
+top 	relation CopyCentralBufferNode {
+		checkonly domain source source_CentralBufferNode:uml241::CentralBufferNode{	};
+		enforce domain target target_CentralBufferNode:uml241::CentralBufferNode{	};
+
+		when{
+			not(MarkDataStoreNode(
+			source_CentralBufferNode,
+			target_CentralBufferNode));
+		}
+		where{
+			MarkCentralBufferNode(
+			source_CentralBufferNode,
+			target_CentralBufferNode);
+		}
+	}
+top 	relation CopyCallOperationAction {
+		checkonly domain source source_CallOperationAction:uml241::CallOperationAction{	};
+		enforce domain target target_CallOperationAction:uml241::CallOperationAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkCallOperationAction(
+			source_CallOperationAction,
+			target_CallOperationAction);
+		}
+	}
+top 	relation CopyCallEvent {
+		checkonly domain source source_CallEvent:uml241::CallEvent{	};
+		enforce domain target target_CallEvent:uml241::CallEvent{	};
+
+		when{
+			
+		}
+		where{
+			MarkCallEvent(
+			source_CallEvent,
+			target_CallEvent);
+		}
+	}
+top 	relation CopyCallBehaviorAction {
+		checkonly domain source source_CallBehaviorAction:uml241::CallBehaviorAction{	};
+		enforce domain target target_CallBehaviorAction:uml241::CallBehaviorAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkCallBehaviorAction(
+			source_CallBehaviorAction,
+			target_CallBehaviorAction);
+		}
+	}
+top 	relation CopyBroadcastSignalAction {
+		checkonly domain source source_BroadcastSignalAction:uml241::BroadcastSignalAction{	};
+		enforce domain target target_BroadcastSignalAction:uml241::BroadcastSignalAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkBroadcastSignalAction(
+			source_BroadcastSignalAction,
+			target_BroadcastSignalAction);
+		}
+	}
+top 	relation CopyBehaviorExecutionSpecification {
+		checkonly domain source source_BehaviorExecutionSpecification:uml241::BehaviorExecutionSpecification{	};
+		enforce domain target target_BehaviorExecutionSpecification:uml241::BehaviorExecutionSpecification{	};
+
+		when{
+			
+		}
+		where{
+			MarkBehaviorExecutionSpecification(
+			source_BehaviorExecutionSpecification,
+			target_BehaviorExecutionSpecification);
+		}
+	}
+top 	relation CopyAssociationClass {
+		checkonly domain source source_AssociationClass:uml241::AssociationClass{	};
+		enforce domain target target_AssociationClass:uml241::AssociationClass{	};
+
+		when{
+			
+		}
+		where{
+			MarkAssociationClass(
+			source_AssociationClass,
+			target_AssociationClass);
+		}
+	}
+top 	relation CopyAnyReceiveEvent {
+		checkonly domain source source_AnyReceiveEvent:uml241::AnyReceiveEvent{	};
+		enforce domain target target_AnyReceiveEvent:uml241::AnyReceiveEvent{	};
+
+		when{
+			
+		}
+		where{
+			MarkAnyReceiveEvent(
+			source_AnyReceiveEvent,
+			target_AnyReceiveEvent);
+		}
+	}
+top 	relation CopyAddVariableValueAction {
+		checkonly domain source source_AddVariableValueAction:uml241::AddVariableValueAction{	};
+		enforce domain target target_AddVariableValueAction:uml241::AddVariableValueAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkAddVariableValueAction(
+			source_AddVariableValueAction,
+			target_AddVariableValueAction);
+		}
+	}
+top 	relation CopyAddStructuralFeatureValueAction {
+		checkonly domain source source_AddStructuralFeatureValueAction:uml241::AddStructuralFeatureValueAction{	};
+		enforce domain target target_AddStructuralFeatureValueAction:uml241::AddStructuralFeatureValueAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkAddStructuralFeatureValueAction(
+			source_AddStructuralFeatureValueAction,
+			target_AddStructuralFeatureValueAction);
+		}
+	}
+top 	relation CopyActor {
+		checkonly domain source source_Actor:uml241::Actor{	};
+		enforce domain target target_Actor:uml241::Actor{	};
+
+		when{
+			
+		}
+		where{
+			MarkActor(
+			source_Actor,
+			target_Actor);
+		}
+	}
+top 	relation CopyActivityParameterNode {
+		checkonly domain source source_ActivityParameterNode:uml241::ActivityParameterNode{	};
+		enforce domain target target_ActivityParameterNode:uml241::ActivityParameterNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkActivityParameterNode(
+			source_ActivityParameterNode,
+			target_ActivityParameterNode);
+		}
+	}
+top 	relation CopyActivityFinalNode {
+		checkonly domain source source_ActivityFinalNode:uml241::ActivityFinalNode{	};
+		enforce domain target target_ActivityFinalNode:uml241::ActivityFinalNode{	};
+
+		when{
+			
+		}
+		where{
+			MarkActivityFinalNode(
+			source_ActivityFinalNode,
+			target_ActivityFinalNode);
+		}
+	}
+top 	relation CopyActionInputPin {
+		checkonly domain source source_ActionInputPin:uml241::ActionInputPin{	};
+		enforce domain target target_ActionInputPin:uml241::ActionInputPin{	};
+
+		when{
+			
+		}
+		where{
+			MarkActionInputPin(
+			source_ActionInputPin,
+			target_ActionInputPin);
+		}
+	}
+top 	relation CopyOccurrenceSpecification {
+		checkonly domain source source_OccurrenceSpecification:uml241::OccurrenceSpecification{	};
+		enforce domain target target_OccurrenceSpecification:uml241::OccurrenceSpecification{	};
+
+		when{
+			not(MarkExecutionOccurrenceSpecification(
+			source_OccurrenceSpecification,
+			target_OccurrenceSpecification));
+
+			not(MarkMessageOccurrenceSpecification(
+			source_OccurrenceSpecification,
+			target_OccurrenceSpecification));
+		}
+		where{
+			MarkOccurrenceSpecification(
+			source_OccurrenceSpecification,
+			target_OccurrenceSpecification);
+		}
+	}
+top 	relation CopyGeneralOrdering {
+		checkonly domain source source_GeneralOrdering:uml241::GeneralOrdering{	};
+		enforce domain target target_GeneralOrdering:uml241::GeneralOrdering{	};
+
+		when{
+			
+		}
+		where{
+			MarkGeneralOrdering(
+			source_GeneralOrdering,
+			target_GeneralOrdering);
+		}
+	}
+top 	relation CopyInteractionConstraint {
+		checkonly domain source source_InteractionConstraint:uml241::InteractionConstraint{	};
+		enforce domain target target_InteractionConstraint:uml241::InteractionConstraint{	};
+
+		when{
+			
+		}
+		where{
+			MarkInteractionConstraint(
+			source_InteractionConstraint,
+			target_InteractionConstraint);
+		}
+	}
+top 	relation CopyInteractionOperand {
+		checkonly domain source source_InteractionOperand:uml241::InteractionOperand{	};
+		enforce domain target target_InteractionOperand:uml241::InteractionOperand{	};
+
+		when{
+			
+		}
+		where{
+			MarkInteractionOperand(
+			source_InteractionOperand,
+			target_InteractionOperand);
+		}
+	}
+top 	relation CopyInteraction {
+		checkonly domain source source_Interaction:uml241::Interaction{	};
+		enforce domain target target_Interaction:uml241::Interaction{	};
+
+		when{
+			
+		}
+		where{
+			MarkInteraction(
+			source_Interaction,
+			target_Interaction);
+		}
+	}
+top 	relation CopyMessage {
+		checkonly domain source source_Message:uml241::Message{	};
+		enforce domain target target_Message:uml241::Message{	};
+
+		when{
+			
+		}
+		where{
+			MarkMessage(
+			source_Message,
+			target_Message);
+		}
+	}
+top 	relation CopyGate {
+		checkonly domain source source_Gate:uml241::Gate{	};
+		enforce domain target target_Gate:uml241::Gate{	};
+
+		when{
+			
+		}
+		where{
+			MarkGate(
+			source_Gate,
+			target_Gate);
+		}
+	}
+top 	relation CopyInteractionUse {
+		checkonly domain source source_InteractionUse:uml241::InteractionUse{	};
+		enforce domain target target_InteractionUse:uml241::InteractionUse{	};
+
+		when{
+			not(MarkPartDecomposition(
+			source_InteractionUse,
+			target_InteractionUse));
+		}
+		where{
+			MarkInteractionUse(
+			source_InteractionUse,
+			target_InteractionUse);
+		}
+	}
+top 	relation CopyPartDecomposition {
+		checkonly domain source source_PartDecomposition:uml241::PartDecomposition{	};
+		enforce domain target target_PartDecomposition:uml241::PartDecomposition{	};
+
+		when{
+			
+		}
+		where{
+			MarkPartDecomposition(
+			source_PartDecomposition,
+			target_PartDecomposition);
+		}
+	}
+top 	relation CopyLifeline {
+		checkonly domain source source_Lifeline:uml241::Lifeline{	};
+		enforce domain target target_Lifeline:uml241::Lifeline{	};
+
+		when{
+			
+		}
+		where{
+			MarkLifeline(
+			source_Lifeline,
+			target_Lifeline);
+		}
+	}
+top 	relation CopyActionExecutionSpecification {
+		checkonly domain source source_ActionExecutionSpecification:uml241::ActionExecutionSpecification{	};
+		enforce domain target target_ActionExecutionSpecification:uml241::ActionExecutionSpecification{	};
+
+		when{
+			
+		}
+		where{
+			MarkActionExecutionSpecification(
+			source_ActionExecutionSpecification,
+			target_ActionExecutionSpecification);
+		}
+	}
+top 	relation CopyExceptionHandler {
+		checkonly domain source source_ExceptionHandler:uml241::ExceptionHandler{	};
+		enforce domain target target_ExceptionHandler:uml241::ExceptionHandler{	};
+
+		when{
+			
+		}
+		where{
+			MarkExceptionHandler(
+			source_ExceptionHandler,
+			target_ExceptionHandler);
+		}
+	}
+top 	relation CopyInterruptibleActivityRegion {
+		checkonly domain source source_InterruptibleActivityRegion:uml241::InterruptibleActivityRegion{	};
+		enforce domain target target_InterruptibleActivityRegion:uml241::InterruptibleActivityRegion{	};
+
+		when{
+			
+		}
+		where{
+			MarkInterruptibleActivityRegion(
+			source_InterruptibleActivityRegion,
+			target_InterruptibleActivityRegion);
+		}
+	}
+top 	relation CopyVariable {
+		checkonly domain source source_Variable:uml241::Variable{	};
+		enforce domain target target_Variable:uml241::Variable{	};
+
+		when{
+			
+		}
+		where{
+			MarkVariable(
+			source_Variable,
+			target_Variable);
+		}
+	}
+top 	relation CopyOutputPin {
+		checkonly domain source source_OutputPin:uml241::OutputPin{	};
+		enforce domain target target_OutputPin:uml241::OutputPin{	};
+
+		when{
+			
+		}
+		where{
+			MarkOutputPin(
+			source_OutputPin,
+			target_OutputPin);
+		}
+	}
+top 	relation CopyInputPin {
+		checkonly domain source source_InputPin:uml241::InputPin{	};
+		enforce domain target target_InputPin:uml241::InputPin{	};
+
+		when{
+			not(MarkValuePin(
+			source_InputPin,
+			target_InputPin));
+
+			not(MarkActionInputPin(
+			source_InputPin,
+			target_InputPin));
+		}
+		where{
+			MarkInputPin(
+			source_InputPin,
+			target_InputPin);
+		}
+	}
+top 	relation CopyStructuredActivityNode {
+		checkonly domain source source_StructuredActivityNode:uml241::StructuredActivityNode{	};
+		enforce domain target target_StructuredActivityNode:uml241::StructuredActivityNode{	};
+
+		when{
+			not(MarkSequenceNode(
+			source_StructuredActivityNode,
+			target_StructuredActivityNode));
+
+			not(MarkLoopNode(
+			source_StructuredActivityNode,
+			target_StructuredActivityNode));
+
+			not(MarkExpansionRegion(
+			source_StructuredActivityNode,
+			target_StructuredActivityNode));
+
+			not(MarkConditionalNode(
+			source_StructuredActivityNode,
+			target_StructuredActivityNode));
+		}
+		where{
+			MarkStructuredActivityNode(
+			source_StructuredActivityNode,
+			target_StructuredActivityNode);
+		}
+	}
+top 	relation CopyActivityPartition {
+		checkonly domain source source_ActivityPartition:uml241::ActivityPartition{	};
+		enforce domain target target_ActivityPartition:uml241::ActivityPartition{	};
+
+		when{
+			
+		}
+		where{
+			MarkActivityPartition(
+			source_ActivityPartition,
+			target_ActivityPartition);
+		}
+	}
+top 	relation CopyActivity {
+		checkonly domain source source_Activity:uml241::Activity{	};
+		enforce domain target target_Activity:uml241::Activity{	};
+
+		when{
+			
+		}
+		where{
+			MarkActivity(
+			source_Activity,
+			target_Activity);
+		}
+	}
+top 	relation CopyAcceptEventAction {
+		checkonly domain source source_AcceptEventAction:uml241::AcceptEventAction{	};
+		enforce domain target target_AcceptEventAction:uml241::AcceptEventAction{	};
+
+		when{
+			not(MarkAcceptCallAction(
+			source_AcceptEventAction,
+			target_AcceptEventAction));
+		}
+		where{
+			MarkAcceptEventAction(
+			source_AcceptEventAction,
+			target_AcceptEventAction);
+		}
+	}
+top 	relation CopyAcceptCallAction {
+		checkonly domain source source_AcceptCallAction:uml241::AcceptCallAction{	};
+		enforce domain target target_AcceptCallAction:uml241::AcceptCallAction{	};
+
+		when{
+			
+		}
+		where{
+			MarkAcceptCallAction(
+			source_AcceptCallAction,
+			target_AcceptCallAction);
+		}
+	}
+top 	relation CopyOpaqueExpression {
+		checkonly domain source source_OpaqueExpression:uml241::OpaqueExpression{	};
+		enforce domain target target_OpaqueExpression:uml241::OpaqueExpression{	};
+
+		when{
+			
+		}
+		where{
+			MarkOpaqueExpression(
+			source_OpaqueExpression,
+			target_OpaqueExpression);
+		}
+	}
+top 	relation CopyImage {
+		checkonly domain source source_Image:uml241::Image{	};
+		enforce domain target target_Image:uml241::Image{	};
+
+		when{
+			
+		}
+		where{
+			MarkImage(
+			source_Image,
+			target_Image);
+		}
+	}
+top 	relation CopyConnector {
+		checkonly domain source source_Connector:uml241::Connector{	};
+		enforce domain target target_Connector:uml241::Connector{	};
+
+		when{
+			
+		}
+		where{
+			MarkConnector(
+			source_Connector,
+			target_Connector);
+		}
+	}
+top 	relation CopyClassifierTemplateParameter {
+		checkonly domain source source_ClassifierTemplateParameter:uml241::ClassifierTemplateParameter{	};
+		enforce domain target target_ClassifierTemplateParameter:uml241::ClassifierTemplateParameter{	};
+
+		when{
+			
+		}
+		where{
+			MarkClassifierTemplateParameter(
+			source_ClassifierTemplateParameter,
+			target_ClassifierTemplateParameter);
+		}
+	}
+top 	relation CopySubstitution {
+		checkonly domain source source_Substitution:uml241::Substitution{	};
+		enforce domain target target_Substitution:uml241::Substitution{	};
+
+		when{
+			
+		}
+		where{
+			MarkSubstitution(
+			source_Substitution,
+			target_Substitution);
+		}
+	}
+top 	relation CopyInclude {
+		checkonly domain source source_Include:uml241::Include{	};
+		enforce domain target target_Include:uml241::Include{	};
+
+		when{
+			
+		}
+		where{
+			MarkInclude(
+			source_Include,
+			target_Include);
+		}
+	}
+top 	relation CopyExtensionPoint {
+		checkonly domain source source_ExtensionPoint:uml241::ExtensionPoint{	};
+		enforce domain target target_ExtensionPoint:uml241::ExtensionPoint{	};
+
+		when{
+			
+		}
+		where{
+			MarkExtensionPoint(
+			source_ExtensionPoint,
+			target_ExtensionPoint);
+		}
+	}
+top 	relation CopyExtend {
+		checkonly domain source source_Extend:uml241::Extend{	};
+		enforce domain target target_Extend:uml241::Extend{	};
+
+		when{
+			
+		}
+		where{
+			MarkExtend(
+			source_Extend,
+			target_Extend);
+		}
+	}
+top 	relation CopyUseCase {
+		checkonly domain source source_UseCase:uml241::UseCase{	};
+		enforce domain target target_UseCase:uml241::UseCase{	};
+
+		when{
+			
+		}
+		where{
+			MarkUseCase(
+			source_UseCase,
+			target_UseCase);
+		}
+	}
+top 	relation CopyRedefinableTemplateSignature {
+		checkonly domain source source_RedefinableTemplateSignature:uml241::RedefinableTemplateSignature{	};
+		enforce domain target target_RedefinableTemplateSignature:uml241::RedefinableTemplateSignature{	};
+
+		when{
+			
+		}
+		where{
+			MarkRedefinableTemplateSignature(
+			source_RedefinableTemplateSignature,
+			target_RedefinableTemplateSignature);
+		}
+	}
+top 	relation CopyGeneralizationSet {
+		checkonly domain source source_GeneralizationSet:uml241::GeneralizationSet{	};
+		enforce domain target target_GeneralizationSet:uml241::GeneralizationSet{	};
+
+		when{
+			
+		}
+		where{
+			MarkGeneralizationSet(
+			source_GeneralizationSet,
+			target_GeneralizationSet);
+		}
+	}
+top 	relation CopyGeneralization {
+		checkonly domain source source_Generalization:uml241::Generalization{	};
+		enforce domain target target_Generalization:uml241::Generalization{	};
+
+		when{
+			
+		}
+		where{
+			MarkGeneralization(
+			source_Generalization,
+			target_Generalization);
+		}
+	}
+top 	relation CopyCollaboration {
+		checkonly domain source source_Collaboration:uml241::Collaboration{	};
+		enforce domain target target_Collaboration:uml241::Collaboration{	};
+
+		when{
+			
+		}
+		where{
+			MarkCollaboration(
+			source_Collaboration,
+			target_Collaboration);
+		}
+	}
+top 	relation CopyCollaborationUse {
+		checkonly domain source source_CollaborationUse:uml241::CollaborationUse{	};
+		enforce domain target target_CollaborationUse:uml241::CollaborationUse{	};
+
+		when{
+			
+		}
+		where{
+			MarkCollaborationUse(
+			source_CollaborationUse,
+			target_CollaborationUse);
+		}
+	}
+top 	relation CopyUsage {
+		checkonly domain source source_Usage:uml241::Usage{	};
+		enforce domain target target_Usage:uml241::Usage{	};
+
+		when{
+			
+		}
+		where{
+			MarkUsage(
+			source_Usage,
+			target_Usage);
+		}
+	}
+top 	relation CopyPrimitiveType {
+		checkonly domain source source_PrimitiveType:uml241::PrimitiveType{	};
+		enforce domain target target_PrimitiveType:uml241::PrimitiveType{	};
+
+		when{
+			
+		}
+		where{
+			MarkPrimitiveType(
+			source_PrimitiveType,
+			target_PrimitiveType);
+		}
+	}
+top 	relation CopySlot {
+		checkonly domain source source_Slot:uml241::Slot{	};
+		enforce domain target target_Slot:uml241::Slot{	};
+
+		when{
+			
+		}
+		where{
+			MarkSlot(
+			source_Slot,
+			target_Slot);
+		}
+	}
+top 	relation CopyInstanceSpecification {
+		checkonly domain source source_InstanceSpecification:uml241::InstanceSpecification{	};
+		enforce domain target target_InstanceSpecification:uml241::InstanceSpecification{	};
+
+		when{
+			not(MarkEnumerationLiteral(
+			source_InstanceSpecification,
+			target_InstanceSpecification));
+		}
+		where{
+			MarkInstanceSpecification(
+			source_InstanceSpecification,
+			target_InstanceSpecification);
+		}
+	}
+top 	relation CopyEnumerationLiteral {
+		checkonly domain source source_EnumerationLiteral:uml241::EnumerationLiteral{	};
+		enforce domain target target_EnumerationLiteral:uml241::EnumerationLiteral{	};
+
+		when{
+			
+		}
+		where{
+			MarkEnumerationLiteral(
+			source_EnumerationLiteral,
+			target_EnumerationLiteral);
+		}
+	}
+top 	relation CopyEnumeration {
+		checkonly domain source source_Enumeration:uml241::Enumeration{	};
+		enforce domain target target_Enumeration:uml241::Enumeration{	};
+
+		when{
+			
+		}
+		where{
+			MarkEnumeration(
+			source_Enumeration,
+			target_Enumeration);
+		}
+	}
+top 	relation CopyModel {
+		checkonly domain source source_Model:uml241::Model{	};
+		enforce domain target target_Model:uml241::Model{	};
+
+		when{
+			
+		}
+		where{
+			MarkModel(
+			source_Model,
+			target_Model);
+		}
+	}
+top 	relation CopyExtensionEnd {
+		checkonly domain source source_ExtensionEnd:uml241::ExtensionEnd{	};
+		enforce domain target target_ExtensionEnd:uml241::ExtensionEnd{	};
+
+		when{
+			
+		}
+		where{
+			MarkExtensionEnd(
+			source_ExtensionEnd,
+			target_ExtensionEnd);
+		}
+	}
+top 	relation CopyOperationTemplateParameter {
+		checkonly domain source source_OperationTemplateParameter:uml241::OperationTemplateParameter{	};
+		enforce domain target target_OperationTemplateParameter:uml241::OperationTemplateParameter{	};
+
+		when{
+			
+		}
+		where{
+			MarkOperationTemplateParameter(
+			source_OperationTemplateParameter,
+			target_OperationTemplateParameter);
+		}
+	}
+top 	relation CopyDataType {
+		checkonly domain source source_DataType:uml241::DataType{	};
+		enforce domain target target_DataType:uml241::DataType{	};
+
+		when{
+			not(MarkPrimitiveType(
+			source_DataType,
+			target_DataType));
+
+			not(MarkEnumeration(
+			source_DataType,
+			target_DataType));
+		}
+		where{
+			MarkDataType(
+			source_DataType,
+			target_DataType);
+		}
+	}
+top 	relation CopyParameterSet {
+		checkonly domain source source_ParameterSet:uml241::ParameterSet{	};
+		enforce domain target target_ParameterSet:uml241::ParameterSet{	};
+
+		when{
+			
+		}
+		where{
+			MarkParameterSet(
+			source_ParameterSet,
+			target_ParameterSet);
+		}
+	}
+top 	relation CopyParameter {
+		checkonly domain source source_Parameter:uml241::Parameter{	};
+		enforce domain target target_Parameter:uml241::Parameter{	};
+
+		when{
+			
+		}
+		where{
+			MarkParameter(
+			source_Parameter,
+			target_Parameter);
+		}
+	}
+top 	relation CopyProtocolConformance {
+		checkonly domain source source_ProtocolConformance:uml241::ProtocolConformance{	};
+		enforce domain target target_ProtocolConformance:uml241::ProtocolConformance{	};
+
+		when{
+			
+		}
+		where{
+			MarkProtocolConformance(
+			source_ProtocolConformance,
+			target_ProtocolConformance);
+		}
+	}
+top 	relation CopyTransition {
+		checkonly domain source source_Transition:uml241::Transition{	};
+		enforce domain target target_Transition:uml241::Transition{	};
+
+		when{
+			not(MarkProtocolTransition(
+			source_Transition,
+			target_Transition));
+		}
+		where{
+			MarkTransition(
+			source_Transition,
+			target_Transition);
+		}
+	}
+top 	relation CopyConstraint {
+		checkonly domain source source_Constraint:uml241::Constraint{	};
+		enforce domain target target_Constraint:uml241::Constraint{	};
+
+		when{
+			not(MarkIntervalConstraint(
+			source_Constraint,
+			target_Constraint));
+
+			not(MarkInteractionConstraint(
+			source_Constraint,
+			target_Constraint));
+		}
+		where{
+			MarkConstraint(
+			source_Constraint,
+			target_Constraint);
+		}
+	}
+top 	relation CopyPort {
+		checkonly domain source source_Port:uml241::Port{	};
+		enforce domain target target_Port:uml241::Port{	};
+
+		when{
+			
+		}
+		where{
+			MarkPort(
+			source_Port,
+			target_Port);
+		}
+	}
+top 	relation CopyTrigger {
+		checkonly domain source source_Trigger:uml241::Trigger{	};
+		enforce domain target target_Trigger:uml241::Trigger{	};
+
+		when{
+			
+		}
+		where{
+			MarkTrigger(
+			source_Trigger,
+			target_Trigger);
+		}
+	}
+top 	relation CopyConnectionPointReference {
+		checkonly domain source source_ConnectionPointReference:uml241::ConnectionPointReference{	};
+		enforce domain target target_ConnectionPointReference:uml241::ConnectionPointReference{	};
+
+		when{
+			
+		}
+		where{
+			MarkConnectionPointReference(
+			source_ConnectionPointReference,
+			target_ConnectionPointReference);
+		}
+	}
+top 	relation CopyState {
+		checkonly domain source source_State:uml241::State{	};
+		enforce domain target target_State:uml241::State{	};
+
+		when{
+			not(MarkFinalState(
+			source_State,
+			target_State));
+		}
+		where{
+			MarkState(
+			source_State,
+			target_State);
+		}
+	}
+top 	relation CopyRegion {
+		checkonly domain source source_Region:uml241::Region{	};
+		enforce domain target target_Region:uml241::Region{	};
+
+		when{
+			
+		}
+		where{
+			MarkRegion(
+			source_Region,
+			target_Region);
+		}
+	}
+top 	relation CopyPseudostate {
+		checkonly domain source source_Pseudostate:uml241::Pseudostate{	};
+		enforce domain target target_Pseudostate:uml241::Pseudostate{	};
+
+		when{
+			
+		}
+		where{
+			MarkPseudostate(
+			source_Pseudostate,
+			target_Pseudostate);
+		}
+	}
+top 	relation CopyStateMachine {
+		checkonly domain source source_StateMachine:uml241::StateMachine{	};
+		enforce domain target target_StateMachine:uml241::StateMachine{	};
+
+		when{
+			not(MarkProtocolStateMachine(
+			source_StateMachine,
+			target_StateMachine));
+		}
+		where{
+			MarkStateMachine(
+			source_StateMachine,
+			target_StateMachine);
+		}
+	}
+top 	relation CopyProtocolStateMachine {
+		checkonly domain source source_ProtocolStateMachine:uml241::ProtocolStateMachine{	};
+		enforce domain target target_ProtocolStateMachine:uml241::ProtocolStateMachine{	};
+
+		when{
+			
+		}
+		where{
+			MarkProtocolStateMachine(
+			source_ProtocolStateMachine,
+			target_ProtocolStateMachine);
+		}
+	}
+top 	relation CopySignal {
+		checkonly domain source source_Signal:uml241::Signal{	};
+		enforce domain target target_Signal:uml241::Signal{	};
+
+		when{
+			
+		}
+		where{
+			MarkSignal(
+			source_Signal,
+			target_Signal);
+		}
+	}
+top 	relation CopyReception {
+		checkonly domain source source_Reception:uml241::Reception{	};
+		enforce domain target target_Reception:uml241::Reception{	};
+
+		when{
+			
+		}
+		where{
+			MarkReception(
+			source_Reception,
+			target_Reception);
+		}
+	}
+top 	relation CopyInterface {
+		checkonly domain source source_Interface:uml241::Interface{	};
+		enforce domain target target_Interface:uml241::Interface{	};
+
+		when{
+			
+		}
+		where{
+			MarkInterface(
+			source_Interface,
+			target_Interface);
+		}
+	}
+top 	relation CopyRealization {
+		checkonly domain source source_Realization:uml241::Realization{	};
+		enforce domain target target_Realization:uml241::Realization{	};
+
+		when{
+			not(MarkComponentRealization(
+			source_Realization,
+			target_Realization));
+
+			not(MarkSubstitution(
+			source_Realization,
+			target_Realization));
+
+			not(MarkInterfaceRealization(
+			source_Realization,
+			target_Realization));
+		}
+		where{
+			MarkRealization(
+			source_Realization,
+			target_Realization);
+		}
+	}
+top 	relation CopyInterfaceRealization {
+		checkonly domain source source_InterfaceRealization:uml241::InterfaceRealization{	};
+		enforce domain target target_InterfaceRealization:uml241::InterfaceRealization{	};
+
+		when{
+			
+		}
+		where{
+			MarkInterfaceRealization(
+			source_InterfaceRealization,
+			target_InterfaceRealization);
+		}
+	}
+top 	relation CopyOperation {
+		checkonly domain source source_Operation:uml241::Operation{	};
+		enforce domain target target_Operation:uml241::Operation{	};
+
+		when{
+			
+		}
+		where{
+			MarkOperation(
+			source_Operation,
+			target_Operation);
+		}
+	}
+top 	relation CopyManifestation {
+		checkonly domain source source_Manifestation:uml241::Manifestation{	};
+		enforce domain target target_Manifestation:uml241::Manifestation{	};
+
+		when{
+			
+		}
+		where{
+			MarkManifestation(
+			source_Manifestation,
+			target_Manifestation);
+		}
+	}
+top 	relation CopyArtifact {
+		checkonly domain source source_Artifact:uml241::Artifact{	};
+		enforce domain target target_Artifact:uml241::Artifact{	};
+
+		when{
+			not(MarkDeploymentSpecification(
+			source_Artifact,
+			target_Artifact));
+		}
+		where{
+			MarkArtifact(
+			source_Artifact,
+			target_Artifact);
+		}
+	}
+top 	relation CopyDeploymentSpecification {
+		checkonly domain source source_DeploymentSpecification:uml241::DeploymentSpecification{	};
+		enforce domain target target_DeploymentSpecification:uml241::DeploymentSpecification{	};
+
+		when{
+			
+		}
+		where{
+			MarkDeploymentSpecification(
+			source_DeploymentSpecification,
+			target_DeploymentSpecification);
+		}
+	}
+top 	relation CopyDeployment {
+		checkonly domain source source_Deployment:uml241::Deployment{	};
+		enforce domain target target_Deployment:uml241::Deployment{	};
+
+		when{
+			
+		}
+		where{
+			MarkDeployment(
+			source_Deployment,
+			target_Deployment);
+		}
+	}
+top 	relation CopyConnectableElementTemplateParameter {
+		checkonly domain source source_ConnectableElementTemplateParameter:uml241::ConnectableElementTemplateParameter{	};
+		enforce domain target target_ConnectableElementTemplateParameter:uml241::ConnectableElementTemplateParameter{	};
+
+		when{
+			
+		}
+		where{
+			MarkConnectableElementTemplateParameter(
+			source_ConnectableElementTemplateParameter,
+			target_ConnectableElementTemplateParameter);
+		}
+	}
+top 	relation CopyConnectorEnd {
+		checkonly domain source source_ConnectorEnd:uml241::ConnectorEnd{	};
+		enforce domain target target_ConnectorEnd:uml241::ConnectorEnd{	};
+
+		when{
+			
+		}
+		where{
+			MarkConnectorEnd(
+			source_ConnectorEnd,
+			target_ConnectorEnd);
+		}
+	}
+top 	relation CopyProperty {
+		checkonly domain source source_Property:uml241::Property{	};
+		enforce domain target target_Property:uml241::Property{	};
+
+		when{
+			not(MarkExtensionEnd(
+			source_Property,
+			target_Property));
+
+			not(MarkPort(
+			source_Property,
+			target_Property));
+		}
+		where{
+			MarkProperty(
+			source_Property,
+			target_Property);
+		}
+	}
+top 	relation CopyAssociation {
+		checkonly domain source source_Association:uml241::Association{	};
+		enforce domain target target_Association:uml241::Association{	};
+
+		when{
+			not(MarkCommunicationPath(
+			source_Association,
+			target_Association));
+
+			not(MarkExtension(
+			source_Association,
+			target_Association));
+		}
+		where{
+			MarkAssociation(
+			source_Association,
+			target_Association);
+		}
+	}
+top 	relation CopyExtension {
+		checkonly domain source source_Extension:uml241::Extension{	};
+		enforce domain target target_Extension:uml241::Extension{	};
+
+		when{
+			
+		}
+		where{
+			MarkExtension(
+			source_Extension,
+			target_Extension);
+		}
+	}
+top 	relation CopyPackageImport {
+		checkonly domain source source_PackageImport:uml241::PackageImport{	};
+		enforce domain target target_PackageImport:uml241::PackageImport{	};
+
+		when{
+			
+		}
+		where{
+			MarkPackageImport(
+			source_PackageImport,
+			target_PackageImport);
+		}
+	}
+top 	relation CopyElementImport {
+		checkonly domain source source_ElementImport:uml241::ElementImport{	};
+		enforce domain target target_ElementImport:uml241::ElementImport{	};
+
+		when{
+			
+		}
+		where{
+			MarkElementImport(
+			source_ElementImport,
+			target_ElementImport);
+		}
+	}
+top 	relation CopyProfile {
+		checkonly domain source source_Profile:uml241::Profile{	};
+		enforce domain target target_Profile:uml241::Profile{	};
+
+		when{
+			
+		}
+		where{
+			MarkProfile(
+			source_Profile,
+			target_Profile);
+		}
+	}
+top 	relation CopyProfileApplication {
+		checkonly domain source source_ProfileApplication:uml241::ProfileApplication{	};
+		enforce domain target target_ProfileApplication:uml241::ProfileApplication{	};
+
+		when{
+			
+		}
+		where{
+			MarkProfileApplication(
+			source_ProfileApplication,
+			target_ProfileApplication);
+		}
+	}
+top 	relation CopyPackageMerge {
+		checkonly domain source source_PackageMerge:uml241::PackageMerge{	};
+		enforce domain target target_PackageMerge:uml241::PackageMerge{	};
+
+		when{
+			
+		}
+		where{
+			MarkPackageMerge(
+			source_PackageMerge,
+			target_PackageMerge);
+		}
+	}
+top 	relation CopyTemplateParameterSubstitution {
+		checkonly domain source source_TemplateParameterSubstitution:uml241::TemplateParameterSubstitution{	};
+		enforce domain target target_TemplateParameterSubstitution:uml241::TemplateParameterSubstitution{	};
+
+		when{
+			
+		}
+		where{
+			MarkTemplateParameterSubstitution(
+			source_TemplateParameterSubstitution,
+			target_TemplateParameterSubstitution);
+		}
+	}
+top 	relation CopyTemplateBinding {
+		checkonly domain source source_TemplateBinding:uml241::TemplateBinding{	};
+		enforce domain target target_TemplateBinding:uml241::TemplateBinding{	};
+
+		when{
+			
+		}
+		where{
+			MarkTemplateBinding(
+			source_TemplateBinding,
+			target_TemplateBinding);
+		}
+	}
+top 	relation CopyTemplateParameter {
+		checkonly domain source source_TemplateParameter:uml241::TemplateParameter{	};
+		enforce domain target target_TemplateParameter:uml241::TemplateParameter{	};
+
+		when{
+			not(MarkClassifierTemplateParameter(
+			source_TemplateParameter,
+			target_TemplateParameter));
+
+			not(MarkOperationTemplateParameter(
+			source_TemplateParameter,
+			target_TemplateParameter));
+
+			not(MarkConnectableElementTemplateParameter(
+			source_TemplateParameter,
+			target_TemplateParameter));
+		}
+		where{
+			MarkTemplateParameter(
+			source_TemplateParameter,
+			target_TemplateParameter);
+		}
+	}
+top 	relation CopyTemplateSignature {
+		checkonly domain source source_TemplateSignature:uml241::TemplateSignature{	};
+		enforce domain target target_TemplateSignature:uml241::TemplateSignature{	};
+
+		when{
+			not(MarkRedefinableTemplateSignature(
+			source_TemplateSignature,
+			target_TemplateSignature));
+		}
+		where{
+			MarkTemplateSignature(
+			source_TemplateSignature,
+			target_TemplateSignature);
+		}
+	}
+top 	relation CopyPackage {
+		checkonly domain source source_Package:uml241::Package{	};
+		enforce domain target target_Package:uml241::Package{	};
+
+		when{
+			not(MarkModel(
+			source_Package,
+			target_Package));
+
+			not(MarkProfile(
+			source_Package,
+			target_Package));
+		}
+		where{
+			MarkPackage(
+			source_Package,
+			target_Package);
+		}
+	}
+top 	relation CopyExpression {
+		checkonly domain source source_Expression:uml241::Expression{	};
+		enforce domain target target_Expression:uml241::Expression{	};
+
+		when{
+			not(MarkStringExpression(
+			source_Expression,
+			target_Expression));
+		}
+		where{
+			MarkExpression(
+			source_Expression,
+			target_Expression);
+		}
+	}
+top 	relation CopyStringExpression {
+		checkonly domain source source_StringExpression:uml241::StringExpression{	};
+		enforce domain target target_StringExpression:uml241::StringExpression{	};
+
+		when{
+			
+		}
+		where{
+			MarkStringExpression(
+			source_StringExpression,
+			target_StringExpression);
+		}
+	}
+top 	relation CopyClass {
+		checkonly domain source source_Class:uml241::Class{	};
+		enforce domain target target_Class:uml241::Class{	};
+
+		when{
+			not(MarkNode(
+			source_Class,
+			target_Class));
+
+			not(MarkComponent(
+			source_Class,
+			target_Class));
+
+			not(MarkAssociationClass(
+			source_Class,
+			target_Class));
+
+			not(MarkOpaqueBehavior(
+			source_Class,
+			target_Class));
+
+			not(MarkInteraction(
+			source_Class,
+			target_Class));
+
+			not(MarkActivity(
+			source_Class,
+			target_Class));
+
+			not(MarkStateMachine(
+			source_Class,
+			target_Class));
+
+			not(MarkStereotype(
+			source_Class,
+			target_Class));
+		}
+		where{
+			MarkClass(
+			source_Class,
+			target_Class);
+		}
+	}
+top 	relation CopyStereotype {
+		checkonly domain source source_Stereotype:uml241::Stereotype{	};
+		enforce domain target target_Stereotype:uml241::Stereotype{	};
+
+		when{
+			
+		}
+		where{
+			MarkStereotype(
+			source_Stereotype,
+			target_Stereotype);
+		}
+	}
+top 	relation CopyComment {
+		checkonly domain source source_Comment:uml241::Comment{	};
+		enforce domain target target_Comment:uml241::Comment{	};
+
+		when{
+			
+		}
+		where{
+			MarkComment(
+			source_Comment,
+			target_Comment);
+		}
+	}
+top 	relation CopyDependency {
+		checkonly domain source source_Dependency:uml241::Dependency{	};
+		enforce domain target target_Dependency:uml241::Dependency{	};
+
+		when{
+			not(MarkUsage(
+			source_Dependency,
+			target_Dependency));
+
+			not(MarkDeployment(
+			source_Dependency,
+			target_Dependency));
+
+			not(MarkAbstraction(
+			source_Dependency,
+			target_Dependency));
+		}
+		where{
+			MarkDependency(
+			source_Dependency,
+			target_Dependency);
+		}
+	}
+top 	relation CopyAbstraction {
+		checkonly domain source source_Abstraction:uml241::Abstraction{	};
+		enforce domain target target_Abstraction:uml241::Abstraction{	};
+
+		when{
+			not(MarkRealization(
+			source_Abstraction,
+			target_Abstraction));
+
+			not(MarkManifestation(
+			source_Abstraction,
+			target_Abstraction));
+		}
+		where{
+			MarkAbstraction(
+			source_Abstraction,
+			target_Abstraction);
+		}
+	}
+top 	relation CopyAttribute_TimeObservation_firstEvent {
+		local_firstEventValue:Boolean;
+		checkonly domain source source_TimeObservation:uml241::TimeObservation{
+			,firstEvent=local_firstEventValue	};
+		enforce domain target target_TimeObservation:uml241::TimeObservation{
+			,firstEvent=local_firstEventValue	};
+
+		when{
+			MarkTimeObservation(
+			source_TimeObservation,
+			target_TimeObservation);
+		}
+	}
+top 	relation CopyAttribute_TimeEvent_isRelative {
+		local_isRelativeValue:Boolean;
+		checkonly domain source source_TimeEvent:uml241::TimeEvent{
+			,isRelative=local_isRelativeValue	};
+		enforce domain target target_TimeEvent:uml241::TimeEvent{
+			,isRelative=local_isRelativeValue	};
+
+		when{
+			MarkTimeEvent(
+			source_TimeEvent,
+			target_TimeEvent);
+		}
+	}
+top 	relation CopyAttribute_TimeConstraint_firstEvent {
+		local_firstEventValue:Boolean;
+		checkonly domain source source_TimeConstraint:uml241::TimeConstraint{
+			,firstEvent=local_firstEventValue	};
+		enforce domain target target_TimeConstraint:uml241::TimeConstraint{
+			,firstEvent=local_firstEventValue	};
+
+		when{
+			MarkTimeConstraint(
+			source_TimeConstraint,
+			target_TimeConstraint);
+		}
+	}
+top 	relation CopyAttribute_RemoveVariableValueAction_isRemoveDuplicates {
+		local_isRemoveDuplicatesValue:Boolean;
+		checkonly domain source source_RemoveVariableValueAction:uml241::RemoveVariableValueAction{
+			,isRemoveDuplicates=local_isRemoveDuplicatesValue	};
+		enforce domain target target_RemoveVariableValueAction:uml241::RemoveVariableValueAction{
+			,isRemoveDuplicates=local_isRemoveDuplicatesValue	};
+
+		when{
+			MarkRemoveVariableValueAction(
+			source_RemoveVariableValueAction,
+			target_RemoveVariableValueAction);
+		}
+	}
+top 	relation CopyAttribute_RemoveStructuralFeatureValueAction_isRemoveDuplicates {
+		local_isRemoveDuplicatesValue:Boolean;
+		checkonly domain source source_RemoveStructuralFeatureValueAction:uml241::RemoveStructuralFeatureValueAction{
+			,isRemoveDuplicates=local_isRemoveDuplicatesValue	};
+		enforce domain target target_RemoveStructuralFeatureValueAction:uml241::RemoveStructuralFeatureValueAction{
+			,isRemoveDuplicates=local_isRemoveDuplicatesValue	};
+
+		when{
+			MarkRemoveStructuralFeatureValueAction(
+			source_RemoveStructuralFeatureValueAction,
+			target_RemoveStructuralFeatureValueAction);
+		}
+	}
+top 	relation CopyAttribute_ReduceAction_isOrdered {
+		local_isOrderedValue:Boolean;
+		checkonly domain source source_ReduceAction:uml241::ReduceAction{
+			,isOrdered=local_isOrderedValue	};
+		enforce domain target target_ReduceAction:uml241::ReduceAction{
+			,isOrdered=local_isOrderedValue	};
+
+		when{
+			MarkReduceAction(
+			source_ReduceAction,
+			target_ReduceAction);
+		}
+	}
+top 	relation CopyAttribute_ReclassifyObjectAction_isReplaceAll {
+		local_isReplaceAllValue:Boolean;
+		checkonly domain source source_ReclassifyObjectAction:uml241::ReclassifyObjectAction{
+			,isReplaceAll=local_isReplaceAllValue	};
+		enforce domain target target_ReclassifyObjectAction:uml241::ReclassifyObjectAction{
+			,isReplaceAll=local_isReplaceAllValue	};
+
+		when{
+			MarkReclassifyObjectAction(
+			source_ReclassifyObjectAction,
+			target_ReclassifyObjectAction);
+		}
+	}
+top 	relation CopyAttribute_ReadIsClassifiedObjectAction_isDirect {
+		local_isDirectValue:Boolean;
+		checkonly domain source source_ReadIsClassifiedObjectAction:uml241::ReadIsClassifiedObjectAction{
+			,isDirect=local_isDirectValue	};
+		enforce domain target target_ReadIsClassifiedObjectAction:uml241::ReadIsClassifiedObjectAction{
+			,isDirect=local_isDirectValue	};
+
+		when{
+			MarkReadIsClassifiedObjectAction(
+			source_ReadIsClassifiedObjectAction,
+			target_ReadIsClassifiedObjectAction);
+		}
+	}
+top 	relation CopyAttribute_OpaqueAction_language {
+		local_languageValue:OrderedSet(String);
+		checkonly domain source source_OpaqueAction:uml241::OpaqueAction{
+			,language=local_languageValue	};
+		enforce domain target target_OpaqueAction:uml241::OpaqueAction{
+			,language=local_languageValue	};
+
+		when{
+			MarkOpaqueAction(
+			source_OpaqueAction,
+			target_OpaqueAction);
+		}
+	}
+top 	relation CopyAttribute_OpaqueAction_body {
+		local_bodyValue:Sequence(String);
+		checkonly domain source source_OpaqueAction:uml241::OpaqueAction{
+			,_body=local_bodyValue	};
+		enforce domain target target_OpaqueAction:uml241::OpaqueAction{
+			,_body=local_bodyValue	};
+
+		when{
+			MarkOpaqueAction(
+			source_OpaqueAction,
+			target_OpaqueAction);
+		}
+	}
+top 	relation CopyAttribute_LoopNode_isTestedFirst {
+		local_isTestedFirstValue:Boolean;
+		checkonly domain source source_LoopNode:uml241::LoopNode{
+			,isTestedFirst=local_isTestedFirstValue	};
+		enforce domain target target_LoopNode:uml241::LoopNode{
+			,isTestedFirst=local_isTestedFirstValue	};
+
+		when{
+			MarkLoopNode(
+			source_LoopNode,
+			target_LoopNode);
+		}
+	}
+top 	relation CopyAttribute_LiteralUnlimitedNatural_value {
+		local_valueValue:UnlimitedNatural;
+		checkonly domain source source_LiteralUnlimitedNatural:uml241::LiteralUnlimitedNatural{
+			,value=local_valueValue	};
+		enforce domain target target_LiteralUnlimitedNatural:uml241::LiteralUnlimitedNatural{
+			,value=local_valueValue	};
+
+		when{
+			MarkLiteralUnlimitedNatural(
+			source_LiteralUnlimitedNatural,
+			target_LiteralUnlimitedNatural);
+		}
+	}
+top 	relation CopyAttribute_LiteralString_value {
+		local_valueValue:String;
+		checkonly domain source source_LiteralString:uml241::LiteralString{
+			,value=local_valueValue	};
+		enforce domain target target_LiteralString:uml241::LiteralString{
+			,value=local_valueValue	};
+
+		when{
+			MarkLiteralString(
+			source_LiteralString,
+			target_LiteralString);
+		}
+	}
+top 	relation CopyAttribute_LiteralReal_value {
+		local_valueValue:Real;
+		checkonly domain source source_LiteralReal:uml241::LiteralReal{
+			,value=local_valueValue	};
+		enforce domain target target_LiteralReal:uml241::LiteralReal{
+			,value=local_valueValue	};
+
+		when{
+			MarkLiteralReal(
+			source_LiteralReal,
+			target_LiteralReal);
+		}
+	}
+top 	relation CopyAttribute_LiteralInteger_value {
+		local_valueValue:Integer;
+		checkonly domain source source_LiteralInteger:uml241::LiteralInteger{
+			,value=local_valueValue	};
+		enforce domain target target_LiteralInteger:uml241::LiteralInteger{
+			,value=local_valueValue	};
+
+		when{
+			MarkLiteralInteger(
+			source_LiteralInteger,
+			target_LiteralInteger);
+		}
+	}
+top 	relation CopyAttribute_LiteralBoolean_value {
+		local_valueValue:Boolean;
+		checkonly domain source source_LiteralBoolean:uml241::LiteralBoolean{
+			,value=local_valueValue	};
+		enforce domain target target_LiteralBoolean:uml241::LiteralBoolean{
+			,value=local_valueValue	};
+
+		when{
+			MarkLiteralBoolean(
+			source_LiteralBoolean,
+			target_LiteralBoolean);
+		}
+	}
+top 	relation CopyAttribute_JoinNode_isCombineDuplicate {
+		local_isCombineDuplicateValue:Boolean;
+		checkonly domain source source_JoinNode:uml241::JoinNode{
+			,isCombineDuplicate=local_isCombineDuplicateValue	};
+		enforce domain target target_JoinNode:uml241::JoinNode{
+			,isCombineDuplicate=local_isCombineDuplicateValue	};
+
+		when{
+			MarkJoinNode(
+			source_JoinNode,
+			target_JoinNode);
+		}
+	}
+top 	relation CopyAttribute_OpaqueBehavior_language {
+		local_languageValue:OrderedSet(String);
+		checkonly domain source source_OpaqueBehavior:uml241::OpaqueBehavior{
+			,language=local_languageValue	};
+		enforce domain target target_OpaqueBehavior:uml241::OpaqueBehavior{
+			,language=local_languageValue	};
+
+		when{
+			MarkOpaqueBehavior(
+			source_OpaqueBehavior,
+			target_OpaqueBehavior);
+		}
+	}
+top 	relation CopyAttribute_OpaqueBehavior_body {
+		local_bodyValue:Sequence(String);
+		checkonly domain source source_OpaqueBehavior:uml241::Opaq
